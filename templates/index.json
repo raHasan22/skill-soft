@@ -1,0 +1,179 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "sa_video_section_zmANX6": {
+      "type": "sa-video-section",
+      "name": "SA Video Section",
+      "settings": {
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "background_color": "#f3efda",
+        "title": "Are You Ready?",
+        "description": "<p>The way employees work, learn, and grow is evolving at an unprecedented pace, with 85% of jobs by 2030 expected to require skills that don't yet exist. Traditional workforce development approaches – rooted in content libraries and course completions – are no longer sufficient.</p><p>Organizations must rethink their approach to career development and talent optimization, focusing on transformative learning strategies that close the gap between potential and performance.</p>",
+        "video_thumbnail": "shopify://shop_images/Rectangle_1723.png",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/7b7c5de6287a4a928375a5a1a4b13a6c.mp4",
+        "cta_text": "See Where You Stand",
+        "cta_link": "/",
+        "cta_color": "#ff319f",
+        "cta_text_color": "#f3efda"
+      }
+    },
+    "sa_reversable_banner_dqnaXm": {
+      "type": "sa-reversable-banner",
+      "name": "SA Reversable Banner",
+      "settings": {
+        "image": "shopify://shop_images/Vector_2.png",
+        "title": "Learn Through Practice",
+        "description": "<p>Provide learners with a safe space to practice critical business conversations and receive immediate, personalized feedback from an AI-powered coach.</p>",
+        "button_text": "Meet Skillsoft Caisy™",
+        "button_link": "#",
+        "reverse_layout": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "sa_reversable_banner_inUbi4": {
+      "type": "sa-reversable-banner",
+      "name": "SA Reversable Banner",
+      "settings": {
+        "image": "shopify://shop_images/Vector_2.png",
+        "title": "Fuel Organizationaland Employee Growthwith Skillsoft",
+        "description": "<p>Skillsoft helps organizations develop their workforce through AI-powered learning, hands-on practice, and real-time insights—driving continuous growth and skill readiness.</p>",
+        "button_text": "Explore Our Platform",
+        "button_link": "#",
+        "reverse_layout": true,
+        "padding_top": 60,
+        "padding_bottom": 120
+      }
+    },
+    "nxt_talented_section_wzqaaK": {
+      "type": "nxt-talented-section",
+      "blocks": {
+        "talented_j43gG6": {
+          "type": "talented",
+          "settings": {
+            "image_style": "style-1",
+            "image": "shopify://shop_images/talented-1.webp",
+            "title": "Elevate Talent Growth",
+            "description": "Build a workforce equipped to lead teams, implement",
+            "button_text": "Explore Solutions",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "talented_fgzyry": {
+          "type": "talented",
+          "settings": {
+            "image_style": "style-2",
+            "image": "shopify://shop_images/talented-2.webp",
+            "title": "Future-Proof Your Workforce",
+            "description": "Equip your talent to adapt to evolving business demands",
+            "button_text": "Start Your Journey",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "talented_6yiHxA": {
+          "type": "talented",
+          "settings": {
+            "image_style": "style-1",
+            "image": "shopify://shop_images/talented-1.webp",
+            "title": "Embrace an Ethical Culture",
+            "description": "Provide essential training for your employees to",
+            "button_text": "Learn How",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "talented_C3XJDf": {
+          "type": "talented",
+          "settings": {
+            "image_style": "style-2",
+            "image": "shopify://shop_images/talented-2.webp",
+            "title": "Unlock Your Career Potential",
+            "description": "Develop mission-critical skills for growth with",
+            "button_text": "Learn More",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "talented_j43gG6",
+        "talented_fgzyry",
+        "talented_6yiHxA",
+        "talented_C3XJDf"
+      ],
+      "name": "SA Talented Section",
+      "settings": {
+        "title": "Accelerate Your Talent Transformation At Scale",
+        "description": "Drive Growth Across Your Workforce with Interactive, Measurable Learning Experiences that Empower Your Employees",
+        "padding_top": 60,
+        "padding_bottom": 130,
+        "background_color": "#3b132a"
+      }
+    },
+    "nxt_image_box_section_6bdnaH": {
+      "type": "nxt-imageBox-section",
+      "blocks": {
+        "image_box_78MkR6": {
+          "type": "imageBox",
+          "settings": {
+            "icon": "<svg width=\"54\" height=\"54\" viewbox=\"0 0 54 54\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.86928 19.8941L10.6186 22.1773L14.1921 17.553M18.1624 20.3288H29.6394M8.86928 27.195L10.6186 29.4781L14.1921 24.8538M18.1624 27.6296H27.0438M8.81731 34.4439L10.5666 36.727L14.1401 32.1034M18.1104 34.8792H29.5874M8.17078 10.4431H19.6478M28.5839 25.5672C29.8209 25.0556 31.1828 25.6097 31.7092 26.7536L34.3959 32.5873C34.6402 32.017 35.112 31.5297 35.7457 31.2672C36.8734 30.8015 38.1402 31.2031 38.7212 32.1587C38.9102 31.4569 39.4319 30.8346 40.1797 30.5255H40.1803C41.3074 30.0605 42.5741 30.4614 43.1552 31.4164C43.3442 30.7152 43.8652 30.0929 44.6136 29.7832C45.8507 29.2723 47.3233 29.7805 47.739 30.9696L50.7948 39.7167C53.2791 46.8286 44.4112 54.3285 37.7676 50.0296L26.2441 42.5735C25.1663 41.8763 24.9186 40.4361 25.694 39.3739C26.921 38.8677 29.3472 38.8947 30.433 39.5973L32.6156 41.0091L27.2112 28.6122C26.7084 27.4582 27.3468 26.0787 28.5839 25.5679V25.5672Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M24.6142 2.69946H4.47513C3.5384 2.69946 2.76768 3.47018 2.76768 4.40691V45.8634C2.76768 46.8002 3.5357 47.5709 4.47513 47.5709H34.0335M35.741 30.435V13.8249\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M35.741 13.8249H26.3217C25.3822 13.8249 24.6142 13.0575 24.6142 12.1174V2.69946L35.7403 13.8249H35.741Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "title": "Bridge Skills Gaps",
+            "description": "Empowers organizations to upskill and reskill their workforce in alignment with market demands."
+          }
+        },
+        "image_box_PEEUM8": {
+          "type": "imageBox",
+          "settings": {
+            "icon": "<svg width=\"52\" height=\"45\" viewbox=\"0 0 52 45\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_41_943)\">\n<path d=\"M0.35614 44.6404H51.6438M3.14063 29.9417H9.9968V44.5406H3.14063V29.9417ZM16.095 16.9041H22.9512V44.5406H16.095V16.9041ZM29.0487 28.5447H35.9049V44.5406H29.0487V28.5447ZM42.0032 22.4918H48.8593V44.5406H42.0032V22.4918Z\" stroke=\"#FF319F\" stroke-width=\"0.861233\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M6.56923 13.6162C4.38523 13.6162 2.61438 15.4008 2.61438 17.601C2.61438 19.8012 4.38523 21.5865 6.56923 21.5865C8.75323 21.5865 10.5241 19.8019 10.5241 17.601C10.5241 15.4 8.75323 13.6162 6.56923 13.6162ZM19.5229 0.359619C17.3396 0.359619 15.5681 2.1442 15.5681 4.34441C15.5681 6.54463 17.3389 8.32992 19.5229 8.32992C21.7069 8.32992 23.4778 6.54534 23.4778 4.34441C23.4778 2.14348 21.7069 0.359619 19.5229 0.359619ZM32.4766 12.2164C30.2933 12.2164 28.5218 14.0002 28.5218 16.2012C28.5218 18.4021 30.2926 20.1867 32.4766 20.1867C34.6606 20.1867 36.4315 18.4021 36.4315 16.2012C36.4315 14.0002 34.6606 12.2164 32.4766 12.2164ZM45.431 6.18714C43.247 6.18714 41.4762 7.97172 41.4762 10.1719C41.4762 12.3721 43.247 14.1574 45.431 14.1574C47.615 14.1574 49.3859 12.3729 49.3859 10.1719C49.3859 7.971 47.615 6.18714 45.431 6.18714Z\" stroke=\"#FF319F\" stroke-width=\"0.861233\" stroke-miterlimit=\"22.93\"></path>\n<path d=\"M10.1065 13.9809L16.2197 7.90211M23.093 7.60205L29.2632 13.2932M36.3708 14.5028L41.0201 12.225\" stroke=\"#FF319F\" stroke-width=\"0.861233\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_41_943\">\n<rect width=\"52\" height=\"45\" fill=\"white\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "title": "Improve Talent Retention",
+            "description": "Cultivates a culture of continuous learning and engagement to retain top talent."
+          }
+        },
+        "image_box_PHwpJy": {
+          "type": "imageBox",
+          "settings": {
+            "icon": "<svg width=\"54\" height=\"54\" viewbox=\"0 0 54 54\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M46.6322 26.9978L30.1806 26.9924M28.7735 24.5183C30.1415 25.5002 30.4546 27.4047 29.472 28.7734C28.4894 30.1414 26.5856 30.4545 25.2169 29.4726C23.8489 28.4906 23.5358 26.5861 24.5177 25.2174C25.4997 23.8495 27.4042 23.5363 28.7728 24.5183H28.7735Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M23.882 26.9945L18.076 26.9911M26.9952 2.69946C40.4138 2.69946 51.2909 13.5765 51.2909 26.9951C51.2909 40.4138 40.4138 51.2908 26.9952 51.2908C13.5766 51.2908 2.69952 40.4138 2.69952 26.9951C2.69952 13.5765 13.5766 2.69946 26.9952 2.69946Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M13.3019 39.4758C10.2987 36.1831 8.46771 31.8024 8.46771 26.9953C8.46771 16.7627 16.7627 8.46777 26.9952 8.46777C35.8017 8.46777 43.1734 14.6119 45.057 22.8468\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M15.4703 20.1918C17.7986 16.2546 22.0895 13.6138 26.9952 13.6138C33.005 13.6138 38.0902 17.576 39.7795 23.0304\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M26.9952 18.761C30.0666 18.761 32.7445 20.4428 34.1604 22.9344M46.6322 26.9979L45.1515 26.9925M46.0484 31.7484L44.613 31.3846M44.3322 36.2168L43.0277 35.5162M41.5861 40.1365L40.4901 39.1417M21.4349 41.5807H32.5562C33.167 41.5807 33.6671 42.0801 33.6671 42.6922V44.5077C33.6671 45.1198 33.167 45.6192 32.5562 45.6192H21.4349C20.8228 45.6192 20.3234 45.1191 20.3234 44.5077V42.6922C20.3234 42.0801 20.8234 41.5807 21.4349 41.5807Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "title": "Drive Digital Transformation",
+            "description": "Equip teams with the skills to adapt to new technologies and lead innovation."
+          }
+        },
+        "image_box_DgX7d6": {
+          "type": "imageBox",
+          "settings": {
+            "icon": "<svg width=\"57\" height=\"54\" viewbox=\"0 0 57 54\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M53.5246 29.1298C54.6904 29.1298 55.6354 28.1848 55.6354 27.019C55.6354 25.8532 54.6904 24.9082 53.5246 24.9082C52.3588 24.9082 51.4138 25.8532 51.4138 27.019C51.4138 28.1848 52.3588 29.1298 53.5246 29.1298Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M35.2113 29.1298C36.377 29.1298 37.322 28.1848 37.322 27.019C37.322 25.8532 36.377 24.9082 35.2113 24.9082C34.0455 24.9082 33.1005 25.8532 33.1005 27.019C33.1005 28.1848 34.0455 29.1298 35.2113 29.1298Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M49.3024 38.2233C50.4682 38.2233 51.4132 37.2783 51.4132 36.1125C51.4132 34.9467 50.4682 34.0017 49.3024 34.0017C48.1367 34.0017 47.1917 34.9467 47.1917 36.1125C47.1917 37.2783 48.1367 38.2233 49.3024 38.2233Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M41.0805 50.4481C42.2463 50.4481 43.1913 49.5031 43.1913 48.3374C43.1913 47.1716 42.2463 46.2266 41.0805 46.2266C39.9148 46.2266 38.9697 47.1716 38.9697 48.3374C38.9697 49.5031 39.9148 50.4481 41.0805 50.4481Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M39.4607 49.915L35.7877 53.588H28.0729\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M48.024 37.791L43.9185 41.8965H32.2256\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M37.3218 27.0188H51.4147\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M42.922 22.2113C43.7463 21.387 43.7463 20.0505 42.922 19.2262C42.0977 18.4019 40.7612 18.4019 39.9369 19.2262C39.1126 20.0505 39.1126 21.387 39.9369 22.2113C40.7612 23.0356 42.0977 23.0356 42.922 22.2113Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M49.3024 19.9857C50.4682 19.9857 51.4132 19.0407 51.4132 17.875C51.4132 16.7092 50.4682 15.7642 49.3024 15.7642C48.1367 15.7642 47.1917 16.7092 47.1917 17.875C47.1917 19.0407 48.1367 19.9857 49.3024 19.9857Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M39.6733 18.8728L36.9965 16.196H32.2256\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M42.9215 34.472C43.7458 33.6477 43.7458 32.3113 42.9215 31.4869C42.0972 30.6626 40.7607 30.6626 39.9364 31.4869C39.1121 32.3113 39.1121 33.6477 39.9364 34.472C40.7607 35.2964 42.0972 35.2964 42.9215 34.472Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M39.6733 34.8245L36.9965 37.5012H32.2256\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M42.573 7.14222C43.3973 6.3179 43.3973 4.98142 42.573 4.1571C41.7487 3.33279 40.4122 3.33279 39.5879 4.1571C38.7636 4.98142 38.7636 6.3179 39.5879 7.14221C40.4122 7.96653 41.7487 7.96653 42.573 7.14222Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M39.4607 4.07217L35.7877 0.39917H28.0729\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M48.024 16.196L43.9185 12.0906H32.2256\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M19.6523 13.8733C15.9315 13.8733 12.9153 10.8571 12.9153 7.13623C12.9153 3.4154 15.9315 0.39917 19.6523 0.39917C23.3732 0.39917 26.3894 3.4154 26.3894 7.13623V46.8509C26.3894 50.5717 23.3732 53.5879 19.6523 53.5879C15.9315 53.5879 12.9153 50.5717 12.9153 46.8509C12.9153 44.7047 13.9194 42.7927 15.4831 41.5585\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M6.15776 15.7662C5.87323 15.0197 5.71716 14.2103 5.71716 13.3637C5.71716 9.64265 8.73359 6.62622 12.4547 6.62622C12.6099 6.62622 12.7636 6.63174 12.9158 6.64198\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M3.26702 27.9518C1.52983 26.7333 0.394043 24.7155 0.394043 22.4321C0.394043 18.711 3.41047 15.6946 7.13155 15.6946C8.75208 15.6946 10.2386 16.2668 11.4012 17.2197\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M5.76553 37.8077C3.5704 36.6971 2.06494 34.42 2.06494 31.7922C2.06494 28.0711 5.08137 25.0547 8.80245 25.0547\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M12.9103 46.8027C12.6439 46.8351 12.372 46.8516 12.0969 46.8516C8.3758 46.8516 5.35938 43.8352 5.35938 40.1141C5.35938 37.6431 6.68985 35.4827 8.67374 34.3098\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M10.4927 27.3534C8.99827 25.6604 8.41264 23.2745 9.06842 21.0171\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M20.4973 46.3263C19.0029 44.6333 18.4173 42.2474 19.0731 39.99\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M15.8558 27.8115C19.2246 28.5556 21.4434 31.7005 21.1092 35.0503\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M22.1015 19.0789C21.638 21.4025 19.5091 22.9702 17.2036 22.7881\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M19.0052 3.71655C21.0624 4.89333 21.8743 7.40926 20.9702 9.53739\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M16.7662 18.6979C14.8824 17.2602 14.4095 14.6592 15.5863 12.6682\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M18.7644 29.187C18.301 31.5106 16.1721 33.0783 13.8666 32.8963\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M19.7343 9.27905C20.8842 9.4698 21.864 10.0688 22.5505 10.9035\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M17.5968 48.5525C18.7468 48.7432 19.7265 49.3423 20.413 50.177\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M18.4618 42.5825C16.0917 42.5825 14.1385 40.8011 13.8666 38.5051\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n</svg>",
+            "title": "Future-Proof the Workforce",
+            "description": "Enabling ability and resilience in an era of constant change."
+          }
+        }
+      },
+      "block_order": [
+        "image_box_78MkR6",
+        "image_box_PEEUM8",
+        "image_box_PHwpJy",
+        "image_box_DgX7d6"
+      ],
+      "name": "SA Image Box Section",
+      "settings": {
+        "title": "Accelerate Your Talent Transformation At Scale",
+        "description": "Drive Growth Across Your Workforce with Interactive, Measurable Learning Experiences that Empower Your Employees",
+        "padding_top": 66,
+        "padding_bottom": 56,
+        "background_color": "#f3efda"
+      }
+    }
+  },
+  "order": [
+    "sa_video_section_zmANX6",
+    "sa_reversable_banner_dqnaXm",
+    "sa_reversable_banner_inUbi4",
+    "nxt_talented_section_wzqaaK",
+    "nxt_image_box_section_6bdnaH"
+  ]
+}

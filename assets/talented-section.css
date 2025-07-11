@@ -1,0 +1,164 @@
+.nxt-talented__header {
+  max-width: 586px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nxt-talented__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 100%;
+  color: #f3efda;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.nxt-talented__description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31.2px;
+  color: #f3efda;
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.nxt-talented__card {
+  max-width: 310px;
+  width: 100%;
+}
+
+.nxt-talented__card-image {
+  margin: 0 auto;
+  max-width: 310px;
+  width: 100%;
+  height: 312px;
+  border-radius: 7.56px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  transition: all 0.3s ease;
+  clip-path: url(#rounded-slant);
+}
+
+.nxt-talented__card-image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 7.56px;
+  object-fit: cover;
+  object-position: top;
+  transition: all 0.3s ease;
+}
+
+.nxt-talented-image-style-2 {
+  clip-path: url(#rounded-slant-2);
+}
+
+.nxt-talented-image-style-2 img {
+  transform: scaleX(-1);
+}
+
+.nxt-talented__card-content {
+  max-width: 245.63px;
+  width: 100%;
+  padding: 68px 18px 22.43px;
+  border-radius: 7.56px;
+  background: #f3efda;
+  text-align: center;
+  margin: -58px auto 0;
+}
+
+.nxt-talented__card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #3b132a;
+  margin: 0 auto;
+  text-wrap: balance;
+  width: 99%;
+}
+
+.nxt-talented__card-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  color: #3b132a;
+  margin: 6px 0 14px;
+}
+
+.nxt-talented__card-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 2.12px;
+  background: #ff319f;
+  border: 1px solid #ff319f;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 9.66px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nxt-talented__card-button:hover {
+  background: transparent;
+  color: #ff319f;
+}
+
+.nxt-container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nxt-grid__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 19px;
+  place-items: center;
+}
+
+@media (min-width: 1025px) {
+  .nxt-grid__wrapper {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1340px) {
+  .nxt-talented__card-image {
+    height: 280px;
+  }
+  .nxt-talented__card-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 220px;
+  }
+  .nxt-talented__card-description {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nxt-grid__wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 767px) {
+  .nxt-talented__title {
+    font-size: 24px;
+  }
+  .nxt-talented__description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
