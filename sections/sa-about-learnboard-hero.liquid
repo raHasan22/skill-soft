@@ -286,6 +286,8 @@
             <img
               src="{% if section.settings.right_image %}{{ section.settings.right_image | image_url: width: 600 }}{% else %}https://dummyimage.com/600x400/3b132a/f3efda&text=About+Learnboard{% endif %}"
               alt="{{ section.settings.right_image_alt | default: 'About Learnboard' }}"
+              height="auto"
+              width="auto"
               class="rh_about_image_rh"
             />
           </div>

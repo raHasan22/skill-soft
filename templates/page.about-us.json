@@ -58,14 +58,14 @@
           "type": "button",
           "settings": {
             "button_text": "Our board of Directors",
-            "button_link": ""
+            "button_link": "#shopify-section-template--25095789838714__sa_about_learnboard_hero_jdQMCA"
           }
         },
         "button_xgk7EA": {
           "type": "button",
           "settings": {
             "button_text": "News and Events",
-            "button_link": ""
+            "button_link": "#shopify-section-template--25095789838714__sa_about_detail_card_b3NKnd"
           }
         }
       },
@@ -151,6 +151,80 @@
         "padding_bottom": 40,
         "background_color": "#f3efda"
       }
+    },
+    "sa_about_learnboard_hero_jdQMCA": {
+      "type": "sa-about-learnboard-hero",
+      "name": "About Learnboard Hero",
+      "settings": {
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "right_image": "shopify://shop_images/about-learn.png",
+        "right_image_alt": "About Learnboard",
+        "title": "LEARN MORE ABOUT OUR BOARD OF DIRECTORS",
+        "description": "Get a learning library with unlimited live and interactive classes for your organisation, offering 700+ monthly classes across AI, technology, data, cloud, and other digital skills.",
+        "button_text": "VIEW OUR INVESTOR SITE",
+        "button_url": "shopify://collections/all"
+      }
+    },
+    "sa_about_detail_card_b3NKnd": {
+      "type": "sa-about-detail-card",
+      "blocks": {
+        "card_jYyT93": {
+          "type": "card",
+          "settings": {
+            "icon_type": "careers",
+            "icon_alt": "",
+            "title": "CAREERS",
+            "description": "Our teams are growing fast and looking for amazing people to join us! We have an open, collaborative workspace where we encourage camaraderie and celebrate teamwork.",
+            "button_text": "Learn More >",
+            "button_url": "shopify://collections"
+          }
+        },
+        "card_cJtip6": {
+          "type": "card",
+          "settings": {
+            "icon_type": "awards",
+            "icon_alt": "",
+            "title": "AWARDS",
+            "description": "With over 20 years of industry knowledge and experience, we are the global leader in cloud-based learning.",
+            "button_text": "View Awards >",
+            "button_url": "shopify://collections/all"
+          }
+        },
+        "card_PKgye4": {
+          "type": "card",
+          "settings": {
+            "icon_type": "leadership",
+            "icon_alt": "",
+            "title": "LEADERSHIP",
+            "description": "We've helped over 1.5 million learners grow into new roles and develop new skills essential for their success.",
+            "button_text": "View Leadership >",
+            "button_url": "shopify://collections"
+          }
+        },
+        "card_8bWq9n": {
+          "type": "card",
+          "settings": {
+            "icon_type": "locations",
+            "icon_alt": "",
+            "title": "OUR LOCATIONS",
+            "description": "We're here for you at our locations across the globe – from North America to Europe, the Middle East, Africa, and the Asia-Pacific region.",
+            "button_text": "View Locations >",
+            "button_url": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "card_jYyT93",
+        "card_cJtip6",
+        "card_PKgye4",
+        "card_8bWq9n"
+      ],
+      "name": "About Detail Cards",
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -159,6 +233,8 @@
     "nxt_buttons_list_gXiakB",
     "sa_our_mission_j3L7wn",
     "sa_reversable_banner_EEh8fX",
-    "nxt_image_with_text_FMWyMT"
+    "nxt_image_with_text_FMWyMT",
+    "sa_about_learnboard_hero_jdQMCA",
+    "sa_about_detail_card_b3NKnd"
   ]
 }
