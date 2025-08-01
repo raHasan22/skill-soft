@@ -8,11 +8,7 @@ if (!customElements.get('show-more-button')) {
         button.addEventListener('click', (event) => {
           this.expandShowMore(event);
           const nextElementToFocus = event.target.closest('.parent-display').querySelector('.show-more-item');
-          if (
-            nextElementToFocus &&
-            !nextElementToFocus.classList.contains('hidden') &&
-            nextElementToFocus.querySelector('input')
-          ) {
+          if (nextElementToFocus && !nextElementToFocus.classList.contains('hidden') && nextElementToFocus.querySelector('input')) {
             nextElementToFocus.querySelector('input').focus();
           }
         });

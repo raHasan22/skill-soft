@@ -1,0 +1,536 @@
+{% comment %}
+  Our Mission Section
+  A dynamic section for displaying company mission with customizable content and styling
+{% endcomment %}
+
+{%- liquid
+  assign section_id = 'srs-our-mission-' | append: section.id
+  assign background_color = section.settings.background_color | default: '#3B142A'
+  assign text_color = section.settings.text_color | default: '#FFFFFF'
+  assign accent_color = section.settings.accent_color | default: '#F3EFDA'
+  assign title_color = section.settings.title_color | default: '#F3EFDA'
+  assign padding_top = section.settings.padding_top | default: 50
+  assign padding_bottom = section.settings.padding_bottom | default: 50
+  assign padding_horizontal = section.settings.padding_horizontal | default: 20
+  assign max_width = section.settings.max_width | default: 1300
+  assign content_padding = section.settings.content_padding | default: 60
+  assign border_radius = section.settings.border_radius | default: 8
+  assign gap_between_parts = section.settings.gap_between_parts | default: 68
+  assign left_part_width = section.settings.left_part_width | default: 313
+  assign left_part_padding = section.settings.left_part_padding | default: 68
+  assign title_font_size = section.settings.title_font_size | default: 36
+  assign title_line_height = section.settings.title_line_height | default: 44
+  assign description_font_size = section.settings.description_font_size | default: 18
+  assign description_line_height = section.settings.description_line_height | default: 31
+  assign image_width = section.settings.image_width | default: 236
+  assign image_height = section.settings.image_height | default: 239
+  assign show_border = section.settings.show_border
+  assign border_width = section.settings.border_width | default: 3
+  assign show_image = section.settings.show_image
+  assign image_style = section.settings.image_style | default: 'rounded'
+  assign gradient_enabled = section.settings.gradient_enabled
+  assign gradient_color = section.settings.gradient_color | default: '#FF319F'
+-%}
+
+<style>
+  #{{ section_id }} {
+    padding: {{ padding_top }}px {{ padding_horizontal }}px {{ padding_bottom }}px;
+  }
+  
+  #{{ section_id }} .srs-container {
+    max-width: {{ max_width }}px;
+    margin: 0 auto;
+  }
+  
+  #{{ section_id }} .srs-content-wrapper {
+    background: {{ background_color }};
+    padding: {{ content_padding }}px;
+    border-radius: {{ border_radius }}px;
+    color: {{ text_color }};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: {{ gap_between_parts }}px;
+  }
+  
+  #{{ section_id }} .left-part {
+    max-width: {{ left_part_width }}px;
+    width: 100%;
+    padding-right: {{ left_part_padding }}px;
+    {% if show_border %}
+    border-right: {{ border_width }}px solid {{ accent_color }};
+    {% endif %}
+  }
+  
+  #{{ section_id }} .srs-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: {{ title_font_size }}px;
+    line-height: {{ title_line_height }}px;
+    color: {{ title_color }};
+    margin: 0;
+  }
+  
+  #{{ section_id }} .srs-image-wrapper {
+    max-width: {{ image_width }}px;
+    height: {{ image_height }}px;
+    position: relative;
+    padding: 4px;
+    overflow: hidden;
+    {% if gradient_enabled %}
+    background: linear-gradient(90deg, {{ gradient_color }} -200.79%, rgba(59, 19, 42, 0) 90.6%);
+    {% endif %}
+    {% if image_style == 'rounded' %}
+    clip-path: url(#{{ section_id }}-rounded-shape);
+    {% endif %}
+    margin-top: 10px;
+  }
+  
+  #{{ section_id }} .srs-image-wrapper img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    {% if image_style == 'rounded' %}
+    border-radius: 4px;
+    clip-path: url(#{{ section_id }}-rounded-shape);
+    {% elsif image_style == 'circle' %}
+    border-radius: 50%;
+    {% else %}
+    border-radius: 8px;
+    {% endif %}
+  }
+  
+  #{{ section_id }} .srs-description {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: {{ description_font_size }}px;
+    line-height: {{ description_line_height }}px;
+    color: {{ text_color }};
+  }
+
+  /* Tablet Responsive */
+  @media (max-width: 1024px) {
+    #{{ section_id }} .srs-content-wrapper {
+      padding: 40px;
+      gap: 40px;
+    }
+
+    #{{ section_id }} .left-part {
+      max-width: 280px;
+      padding-right: 40px;
+    }
+
+    #{{ section_id }} .srs-title h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    #{{ section_id }} .srs-image-wrapper {
+      max-width: 200px;
+      height: 200px;
+    }
+
+    #{{ section_id }} .srs-description {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    #{{ section_id }} {
+      padding: 30px 15px;
+    }
+
+    #{{ section_id }} .srs-content-wrapper {
+      flex-direction: column;
+      padding: 30px 20px;
+      gap: 30px;
+      text-align: center;
+    }
+
+    #{{ section_id }} .left-part {
+      max-width: 100%;
+      padding-right: 0;
+      {% if show_border %}
+      border-right: none;
+      border-bottom: {{ border_width }}px solid {{ accent_color }};
+      {% endif %}
+      padding-bottom: 30px;
+    }
+
+    #{{ section_id }} .srs-title h2 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    #{{ section_id }} .srs-image-wrapper {
+      max-width: 180px;
+      height: 180px;
+      margin: 20px auto 0;
+    }
+
+    #{{ section_id }} .srs-description {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  /* Small Mobile Responsive */
+  @media (max-width: 480px) {
+    #{{ section_id }} {
+      padding: 20px 10px;
+    }
+
+    #{{ section_id }} .srs-content-wrapper {
+      padding: 25px 15px;
+      gap: 25px;
+    }
+
+    #{{ section_id }} .left-part .srs-title h2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    #{{ section_id }} .srs-image-wrapper {
+      max-width: 150px;
+      height: 150px;
+    }
+
+    #{{ section_id }} .srs-description {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+</style>
+
+{% if image_style == 'rounded' %}
+<svg width="0" height="0" style="position: absolute;">
+  <defs>
+    <clippath id="{{ section_id }}-rounded-shape" clipPathUnits="objectBoundingBox">
+      <path d="M 0.024,0
+       Q 0,0 0,0.024
+       L 0,0.976
+       Q 0,1 0.024,1
+       L 0.976,0.92
+       Q 1,0.92 1,0.896
+       L 1,0.104
+       Q 1,0.08 0.976,0.08
+       L 0.024,0 Z"></path>
+    </clippath>
+  </defs>
+</svg>
+{% endif %}
+
+<section id="{{ section_id }}" class="srs-our-mission">
+  <div class="srs-container">
+    <div class="srs-content-wrapper">
+      <div class="left-part">
+        <div class="srs-title">
+          <h2>{{ section.settings.title | default: 'Our Mission' }}</h2>
+        </div>
+        {% if show_image and section.settings.image %}
+          <div class="srs-image-wrapper">
+            <img
+              src="{{ section.settings.image | image_url: width: image_width, height: image_height }}"
+              alt="{{ section.settings.image_alt | default: section.settings.title }}"
+              loading="lazy"
+              width="{{ image_width }}"
+              height="{{ image_height }}">
+          </div>
+        {% endif %}
+      </div>
+      <div class="right-part">
+        <div class="srs-description">
+          {{ section.settings.description | default: 'We believe every person has the potential to be amazing. And that theres a better way to bring out what they already have in them. We know this because weve lived it. Weve had the honor of training more people than anyone. We help democratize learning with powerful cloud-based tools and unmatched enterprise-wide smarts and skills.<br><br>Like our customers, were always evolving – making sure individuals, teams, and enterprises have exactly what they need to unleash their edge.' }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Our Mission",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Our Mission"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>We believe every person has the potential to be amazing. And that there's a better way to bring out what they already have in them.</p><p>We know this because we've lived it. We've had the honor of training more people than anyone. We help democratize learning with powerful cloud-based tools and unmatched enterprise-wide smarts and skills.</p><p>Like our customers, we're always evolving – making sure individuals, teams, and enterprises have exactly what they need to unleash their edge.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Image Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "label": "Show Image",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image Alt Text",
+      "info": "Leave empty to use title as alt text"
+    },
+    {
+      "type": "select",
+      "id": "image_style",
+      "label": "Image Style",
+      "options": [
+        {
+          "value": "rounded",
+          "label": "Rounded (Custom Shape)"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        },
+        {
+          "value": "square",
+          "label": "Square with Rounded Corners"
+        }
+      ],
+      "default": "rounded"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Image Width (px)",
+      "min": 100,
+      "max": 400,
+      "step": 4,
+      "default": 236
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "label": "Image Height (px)",
+      "min": 100,
+      "max": 400,
+      "step": 10,
+      "default": 240
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Section Max Width (px)",
+      "min": 800,
+      "max": 1600,
+      "step": 50,
+      "default": 1300
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "label": "Content Padding (px)",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "gap_between_parts",
+      "label": "Gap Between Parts (px)",
+      "min": 20,
+      "max": 100,
+      "step": 4,
+      "default": 68
+    },
+    {
+      "type": "range",
+      "id": "left_part_width",
+      "label": "Left Part Width (px)",
+      "min": 200,
+      "max": 500,
+      "step": 10,
+      "default": 320
+    },
+    {
+      "type": "range",
+      "id": "left_part_padding",
+      "label": "Left Part Padding (px)",
+      "min": 20,
+      "max": 100,
+      "step": 4,
+      "default": 68
+    },
+    {
+      "type": "header",
+      "content": "Typography Settings"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "label": "Title Font Size (px)",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "title_line_height",
+      "label": "Title Line Height (px)",
+      "min": 24,
+      "max": 80,
+      "step": 2,
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "description_font_size",
+      "label": "Description Font Size (px)",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "description_line_height",
+      "label": "Description Line Height (px)",
+      "min": 16,
+      "max": 50,
+      "step": 1,
+      "default": 31
+    },
+    {
+      "type": "header",
+      "content": "Color Settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#3B142A"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#F3EFDA"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color (Border)",
+      "default": "#F3EFDA"
+    },
+    {
+      "type": "header",
+      "content": "Border Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_border",
+      "label": "Show Border",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Border Width (px)",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border Radius (px)",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Spacing Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Padding (px)",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Padding (px)",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Horizontal Padding (px)",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Image Effects"
+    },
+    {
+      "type": "checkbox",
+      "id": "gradient_enabled",
+      "label": "Enable Image Gradient",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "gradient_color",
+      "label": "Gradient Color",
+      "default": "#FF319F"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SA Our Mission",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

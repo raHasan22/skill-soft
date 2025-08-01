@@ -1,0 +1,120 @@
+{{ 'nxt-page-header.css' | asset_url | stylesheet_tag }}
+{% schema %}
+{
+  "name": "Page Header",
+  "tag": "section",
+  "class": "nxt-pageHeader__area",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "description_enable",
+      "label": "Enable Description",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#3B132A"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Header",
+      "category": "Page Header"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+  .nxt-pageHeader__area {
+    background-color: {{ section.settings.background_color }};
+    padding-top: {{ section.settings.padding_top | times: 0.6 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.6 | round: 0 }}px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+    @media (min-width: 768px) {
+      .nxt-pageHeader__area {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+{% endstyle %}
+
+<div class="nxt-pageHeader__container">
+  <div class="nxt-pageHeader__content">
+    <div class="nxt-pageHeader__title-wrapper">
+      {% if section.settings.title != blank %}
+        <h2 class="nxt-pageHeader__title">{{ section.settings.title }}</h2>
+      {% else %}
+        <h2 class="nxt-pageHeader__title">{{ page.title }}</h2>
+      {% endif %}
+      {% if section.settings.description_enable %}
+        <p class="nxt-pageHeader__description">{{ section.settings.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="nxt-pageHeader__image-area">
+    <div class="nxt-pageHeader__image">
+      {% if section.settings.hero_image != blank %}
+        <img
+          src="{{ section.settings.hero_image | image_url: width: 534 }}"
+          alt="People learning languages together"
+          class="nxt-pageHeader__image-img"
+        >
+      {% else %}
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+          alt="People learning languages together"
+          class="nxt-pageHeader__image-img"
+        >
+      {% endif %}
+    </div>
+  </div>
+</div>

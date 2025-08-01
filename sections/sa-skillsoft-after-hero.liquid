@@ -1,0 +1,380 @@
+{% style %}
+      .rh_skillsoft-after-hero-sec {
+    background-color: #3b132a;
+    padding: {{ section.settings.padding_top }}px {{ section.settings.padding_horizontal }}px {{ section.settings.padding_bottom }}px {{ section.settings.padding_horizontal }}px;
+  }
+
+  .rh_skillsoft-after-hero-sec .container_rh {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .rh_skillsoft-after-hero-sec .logo_container_rh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16%;
+    height: 132px;
+    transition: all 0.3s ease;
+    padding: 10px;
+    position: relative;
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh .trust_logo-bg_rh {
+    position: absolute;
+    inset: 0;
+    color: #4d293c;
+    transition: color 0.3s ease;
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh:nth-child(even) .trust_logo-bg_rh {
+    rotate: 180deg;
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh:hover {
+    transform: translateY(-3px) scale(1.02);
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh:hover .trust_logo-bg_rh {
+    color: #5a3548;
+    filter: drop-shadow(0 2px 8px rgba(255, 49, 159, 0.15));
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_logo_image_rh {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh:hover .rh_after_hero_logo_image_rh {
+    transform: scale(1.03);
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_content_rh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .rh_skillsoft-after-hero-sec .rh_after_hero_title_rh {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.4;
+    color: #f3efda;
+    margin: 0;
+    max-width: 600px;
+  }
+
+
+
+  /* After Hero Section Responsive */
+  @media (max-width: 1024px) {
+    .rh_skillsoft-after-hero-sec {
+      padding: 60px 20px;
+    }
+
+    .rh_skillsoft-after-hero-sec .logo_container_rh {
+      gap: 3px;
+      margin-bottom: 35px;
+    }
+
+    .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh {
+      width: 16%;
+      height: 110px;
+      padding: 12px;
+    }
+
+    .rh_skillsoft-after-hero-sec .rh_after_hero_title_rh {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .rh_skillsoft-after-hero-sec {
+      padding: 50px 16px;
+    }
+
+    .rh_skillsoft-after-hero-sec .logo_container_rh {
+      gap: 2px;
+      margin-bottom: 30px;
+    }
+
+    .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh {
+      width: 16%;
+      height: 90px;
+      padding: 8px;
+    }
+
+      .rh_skillsoft-after-hero-sec .rh_after_hero_title_rh {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .rh_skillsoft-after-hero-sec {
+      padding: 40px 12px;
+    }
+
+    .rh_skillsoft-after-hero-sec .logo_container_rh {
+      gap: 1px;
+      margin-bottom: 25px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .rh_skillsoft-after-hero-sec .logo_container_rh::-webkit-scrollbar {
+      display: none;
+    }
+
+    .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh {
+      width: 16%;
+      min-width: 70px;
+      height: 75px;
+      padding: 6px;
+      flex-shrink: 0;
+    }
+
+      .rh_skillsoft-after-hero-sec .rh_after_hero_title_rh {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    .rh_skillsoft-after-hero-sec .primary-button_skillsoft {
+      padding: 12px 12px;
+  }
+  }
+
+  @media (max-width: 375px) {
+    .rh_skillsoft-after-hero-sec .rh_after_hero_logo_item_rh {
+      min-width: 60px;
+      height: 65px;
+      padding: 5px;
+    }
+
+    .rh_skillsoft-after-hero-sec .rh_after_hero_title_rh {
+      font-size: 16px;
+    }
+  }
+{% endstyle %}
+<div class="rh_skillsoft-after-hero-sec">
+  <div class="container_rh">
+    <div class="logo_container_rh">
+      {% for i in (1..6) %}
+        {% assign logo_setting = 'logo_' | append: i %}
+        {% assign logo = section.settings[logo_setting] %}
+        {% assign alt_setting = 'logo_alt_' | append: i %}
+        {% assign logo_alt = section.settings[alt_setting] %}
+
+        <div class="rh_after_hero_logo_item_rh">
+          {% if i == 1 or i == 6 %}
+            <svg
+              data-wf--trust-logo-bg-shape---side--style="light"
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              viewBox="0 0 170 128"
+              fill="none"
+              class="trust_logo-bg_rh"
+              localized=""
+              dir="ltr"
+            >
+              <path d="M163.469 127.144H6.42233C2.87538 127.144 0 124.268 0 120.721V6.98257C0 3.43562 2.87537 0.560234 6.42233 0.560234H150.476C153.741 0.560234 156.486 3.00983 156.857 6.25365L169.85 119.993C170.285 123.803 167.305 127.144 163.469 127.144Z" fill="#4d293c" class="trust_logo-bg_rh-path" localized="" dir="ltr"></path>
+            </svg>
+          {% else %}
+            <svg
+              data-wf--trust-logo-bg-shape--style="light"
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              viewBox="0 0 172 128"
+              fill="none"
+              class="trust_logo-bg_rh"
+              localized=""
+              dir="ltr"
+            >
+              <path d="M7.0903 127.144C3.27849 127.144 0.305267 123.843 0.702606 120.052L12.6245 6.31299C12.9673 3.0433 15.7245 0.56012 19.0122 0.560059H152.988C156.275 0.560059 159.033 3.04327 159.375 6.31299L171.297 120.052C171.695 123.843 168.722 127.144 164.911 127.144H7.0903Z" fill="#4d293c" localized="" dir="ltr"></path>
+            </svg>
+          {% endif %}
+
+          {% if logo != blank %}
+            <img
+              src="{{ logo | image_url: width: 300 }}"
+              alt="{{ logo_alt | default: logo.alt | default: 'Partner logo' }}"
+              class="rh_after_hero_logo_image_rh"
+            >
+          {% else %}
+            <img
+              src="https://dummyimage.com/150x80/f5f5f5/666&text=LOGO"
+              alt="{{ logo_alt | default: 'Logo placeholder' }}"
+              class="rh_after_hero_logo_image_rh"
+            >
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="rh_after_hero_content_rh">
+      {% if section.settings.title != blank %}
+        <h3 class="rh_after_hero_title_rh">{{ section.settings.title }}</h3>
+      {% endif %}
+      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="primary-button_skillsoft">
+          {{- section.settings.button_label -}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "After Hero Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Left/Right padding",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Partner Logos"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_1",
+      "label": "Logo 1"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt_1",
+      "label": "Logo 1 Alt Text",
+      "default": "TrustRadius Verified"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_2",
+      "label": "Logo 2"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt_2",
+      "label": "Logo 2 Alt Text",
+      "default": "Cyber Essential"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_3",
+      "label": "Logo 3"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt_3",
+      "label": "Logo 3 Alt Text",
+      "default": "Instructure Partner"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_4",
+      "label": "Logo 4"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt_4",
+      "label": "Logo 4 Alt Text",
+      "default": "Common Sense Selection"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_5",
+      "label": "Logo 5"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt_5",
+      "label": "Logo 5 Alt Text",
+      "default": "Security Verified"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_6",
+      "label": "Logo 6"
+    },
+    {
+      "type": "text",
+      "id": "logo_alt_6",
+      "label": "Logo 6 Alt Text",
+      "default": "Learning Analytics"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Trusted by Organizations for Employee Learning and Development"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Check Out Our Customer Stories"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SA After Hero Section"
+    }
+  ]
+}
+{% endschema %}

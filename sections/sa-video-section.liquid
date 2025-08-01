@@ -1,0 +1,399 @@
+{% schema %}
+{
+  "name": "SA Video Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 10,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 10,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 90
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#F3EFDA"
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Are You Ready?"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>The way employees work, learn, and grow is evolving at an unprecedented pace, with 85% of jobs by 2030 expected to require skills that don't yet exist. Traditional workforce development approaches – rooted in content libraries and course completions – are no longer sufficient.</p><p>Organizations must rethink their approach to career development and talent optimization, focusing on transformative learning strategies that close the gap between potential and performance.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Video Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "video_thumbnail",
+      "label": "Video Thumbnail"
+    },
+    {
+      "type": "video",
+      "id": "video_file",
+      "label": "Video File"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video URL (alternative to Video File)",
+      "info": "Used if no video file is selected",
+      "default": "https://cdn.shopify.com/videos/c/o/v/7b7c5de6287a4a928375a5a1a4b13a6c.mp4"
+    },
+    {
+      "type": "header",
+      "content": "CTA Settings"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button Text",
+      "default": "See Where You Stand"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "cta_color",
+      "label": "Button Color",
+      "default": "#FF319F"
+    },
+    {
+      "type": "color",
+      "id": "cta_text_color",
+      "label": "Button Text Color",
+      "default": "#F3EFDA"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SA Video Section",
+      "category": "Custom Content"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  /* Ready Section Styles */
+  .srs-ready-section {
+      padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+    background: #3B132A;
+  }
+
+  .srs-ready-section .srs-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      background-color: {{ section.settings.background_color }};
+      border-radius: 8px;
+      padding: 53px;
+  }
+
+  .srs-ready-section .srs-ready-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .srs-ready-section .srs-ready-content-left {
+      flex: 1;
+      margin-right: 20px;
+    max-width: 523px;
+    width: 100%;
+  }
+
+  .srs-ready-section .srs-ready-content-right {
+      flex: 1;
+    max-width: 602px;
+    width: 100%;
+  }
+
+  .srs-ready-section .video-container {
+      position: relative;
+      max-width: 523px;
+      height: 0;
+      padding-bottom: 70%; /* Maintain aspect ratio */
+      margin: 0;
+    background:#3B132A;
+    border-radius: 8px;
+  }
+
+  .srs-ready-section .video-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #3B132A;
+      border-radius: 8px;
+  }
+
+  .srs-ready-section .video-thumbnail {
+      position: absolute;
+      top: 3.8%;
+      left: 2.8%;
+      width: 94.4%;
+      height: 92.4%;
+      border-radius: 8px;
+      object-fit: cover;
+      z-index: 1;
+  }
+
+  .srs-ready-section .video-play-button {
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 2;
+  }
+
+  .srs-ready-section .video-element {
+      position: absolute;
+      top: 3.8%;
+      left: 2.8%;
+      width: 94.4%;
+      height: 92.4%;
+      border-radius: 8px;
+      object-fit: cover;
+      z-index: 0;
+  }
+
+  .srs-ready-section .video-active .video-thumbnail,
+  .srs-ready-section .video-active .video-play-button {
+      display: none;
+  }
+
+  .srs-ready-section .video-active .video-element {
+      z-index: 3;
+  }
+
+  .srs-ready-section .content-wrapper {
+      max-width: 602px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .srs-ready-section .section-title {
+      color: #3B132A;
+      font-size: 36px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      line-height: 1.2;
+      margin: 0;
+  }
+
+  .srs-ready-section .text-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+  }
+
+  .srs-ready-section .text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    color: #3B132A;
+    font-size: 18px;
+  }
+  .srs-ready-section .text-container p{margin:0; line-height: normal; }
+
+  .srs-ready-section .description {
+      color: #3B132A;
+      font-size: 18px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0;
+  }
+
+  .srs-ready-section .cta-container {
+      margin-top: 5px;
+  }
+
+  .srs-ready-section .cta-button {
+      display: inline-block;
+      padding: 18px 35px;
+      background: {{ section.settings.cta_color }};
+      border-radius: 4px;
+      color: {{ section.settings.cta_text_color }};
+      font-size: 18px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+      line-height: 1;
+      text-decoration: none;
+      text-align: center;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+      .srs-ready-section   .srs-container {
+          padding: 40px;
+          margin: 0 20px;
+      }
+
+      .srs-ready-section .content-wrapper {
+          max-width: 100%;
+      }
+  }
+
+  @media (max-width: 900px) {
+      .srs-ready-section .srs-ready-content {
+          flex-direction: column;
+          gap: 40px;
+      }
+
+      .srs-ready-section .srs-ready-content-left {
+          margin-right: 0;
+          width: 100%;
+      }
+
+      .srs-ready-section .srs-ready-content-right {
+          width: 100%;
+      }
+
+      .srs-ready-section .video-container {
+          max-width: 100%;
+          padding-bottom: 60%;
+      }
+
+      .srs-ready-section .section-title {
+          font-size: 32px;
+      }
+  }
+
+  @media (max-width: 600px) {
+      .srs-ready-section {
+          padding: {{ section.settings.padding_top | divided_by: 1.5 }}px 0 {{ section.settings.padding_bottom | divided_by: 1.5 }}px;
+      }
+
+      .srs-ready-section .srs-container {
+          padding: 30px 20px;
+          margin: 0 10px;
+      }
+
+      .srs-ready-section .section-title {
+          font-size: 28px;
+      }
+
+      .srs-ready-section .description {
+          font-size: 16px;
+      }
+
+      .srs-ready-section .cta-button {
+          padding: 15px 25px;
+          font-size: 16px;
+          width: 100%;
+      }
+  }
+</style>
+
+<section class="srs-ready-section" id="shopify-section-{{ section.id }}">
+  <div class="srs-container">
+    <article class="srs-ready-content">
+      <div class="srs-ready-content-left">
+        <figure class="video-container">
+          <div class="video-frame"></div>
+          {% if section.settings.video_thumbnail %}
+            <img
+              class="video-thumbnail"
+              src="{{ section.settings.video_thumbnail | img_url: '800x' }}"
+              alt="Video thumbnail"
+            >
+          {% else %}
+            <img class="video-thumbnail" src="https://placehold.co/494x337" alt="Video thumbnail">
+          {% endif %}
+
+          {% if section.settings.video_file != blank %}
+            {{ section.settings.video_file | video_tag: controls: true, class: 'video-element' }}
+          {% else %}
+            <video class="video-element" controls>
+              <source src="{{ section.settings.video_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          {% endif %}
+
+          <div class="video-play-button">
+            <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36.9596 0.14209C16.6573 0.14209 0.193329 16.606 0.193329 36.9083C0.193329 57.2107 16.6573 73.6746 36.9596 73.6746C57.2619 73.6746 73.7258 57.2107 73.7258 36.9083C73.7258 16.606 57.2766 0.14209 36.9743 0.14209C36.9743 0.14209 36.9669 0.14209 36.9596 0.14209ZM54.1147 40.4673L28.0254 55.4385C26.3047 56.3945 24.1355 55.7768 23.1796 54.0561C22.8855 53.5267 22.731 52.9311 22.731 52.3281V21.4886C22.731 19.5179 24.3341 17.9223 26.3047 17.9296C26.9077 17.9296 27.496 18.084 28.0254 18.3782L54.1147 34.2391C55.8354 35.2024 56.4457 37.379 55.4824 39.0996C55.1589 39.6732 54.6883 40.1438 54.1147 40.4673Z" fill="#3A1329"/>
+            </svg>
+          </div>
+        </figure>
+      </div>
+      <div class="srs-ready-content-right">
+        <div class="content-wrapper">
+          <h2 class="section-title">{{ section.settings.title }}</h2>
+          <div class="text-content">
+            <div class="text-container">
+              {{ section.settings.description }}
+            </div>
+            <div class="cta-container">
+              <a href="{{ section.settings.cta_link }}" class="primary-button_skillsoft">
+                {{- section.settings.cta_text -}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const playButton = document.querySelector('#shopify-section-{{ section.id }} .video-play-button');
+      const videoContainer = document.querySelector('#shopify-section-{{ section.id }} .video-container');
+      const videoElement = document.querySelector('#shopify-section-{{ section.id }} .video-element');
+
+      if (playButton && videoContainer && videoElement) {
+          playButton.addEventListener('click', function() {
+              videoContainer.classList.add('video-active');
+              if (videoElement.play) {
+                  videoElement.play();
+              } else {
+                  // For video_tag implementation which might have a different structure
+                  const actualVideo = videoElement.querySelector('video');
+                  if (actualVideo && actualVideo.play) {
+                      actualVideo.play();
+                  }
+              }
+          });
+      }
+  });
+</script>

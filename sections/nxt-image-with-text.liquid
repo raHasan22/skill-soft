@@ -1,0 +1,300 @@
+{% schema %}
+{
+  "name": "Image with Text Advanced",
+  "class": "nxt-imageWithText__area",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "OUR LEADERSHIP"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Driven to build a future-fit workforce, skilled and ready for the jobs of tomorrow. Vision, expertise and a growth mindset that never quits. Our team thrives on helping you achieve more.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Meet the Team"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+      "default": "\/collections\/all"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_layout",
+      "label": "Reverse Layout",
+      "default": false,
+      "info": "Show text on the left and image on the right"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#F3EFDA"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with Text Advanced",
+      "category": "Custom Content"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+    .nxt-imageWithText__area {
+        background-color: {{ section.settings.background_color }};
+        padding-top: {{ section.settings.padding_top | times: 0.6 | round: 0 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | times: 0.6 | round: 0 }}px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+        @media (min-width: 768px) {
+          .nxt-imageWithText__area {
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+          }
+        }
+  .nxt-imageWithText__area .nxt-imageWithText__container{
+      max-width: 1300px;
+      margin: 0 auto;
+  }
+  .nxt-imageWithText__area .nxt-imageWithText__content{
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      justify-content: space-between;
+  }
+
+  /* Reversed layout styles */
+  .nxt-imageWithText__area .nxt-imageWithText__content-reversed {
+      flex-direction: row-reverse;
+  }
+
+  .nxt-imageWithText__area   .nxt-imageWithText__content-image {
+      flex: 1;
+  }
+
+  .nxt-imageWithText__area   .nxt-imageWithText__image-wrapper{
+    display: flex;
+  }
+  .nxt-imageWithText__area   .nxt-imageWithText__image-wrapper img{
+    display: flex;
+      max-width: 388px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+  .nxt-imageWithText__content-reversed .nxt-imageWithText__image-wrapper img{
+    margin-left: auto;
+  }
+  .nxt-imageWithText__area  .nxt-imageWithText__content-text {
+      flex: 1;
+  }
+
+  .nxt-imageWithText__area    .nxt-imageWithText__text-wrapper {
+      max-width: 592px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 5px;
+      display: inline-flex;
+  }
+
+  .nxt-imageWithText__area   .nxt-imageWithText__title {
+      color: #3B142A;
+      font-size: 36px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+        line-height: 1.4;
+  }
+
+    .nxt-imageWithText__area   .nxt-imageWithText__description {
+      color: #3B142A;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      line-height: 31.20px;
+      word-wrap: break-word;
+  }
+
+  .nxt-imageWithText__area   .nxt-imageWithText__button {
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      background: #FF319F;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      display: inline-flex;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      line-height: 18.24px;
+      border: 2px solid #FF319F;
+  }
+
+  .nxt-imageWithText__area    .nxt-imageWithText__button:hover {
+      background: #e02a8a;
+      background-color: transparent;
+      color: #ff319f;
+      border-color: #ff319f;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(255, 49, 159, 0.4);
+  }
+
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+      .nxt-imageWithText__area .nxt-imageWithText__content {
+          gap: 60px;
+      }
+
+      .nxt-imageWithText__area     .nxt-imageWithText__title {
+          font-size: 32px;
+      }
+
+      .nxt-imageWithText__area   .nxt-imageWithText__description {
+          font-size: 16px;
+          line-height: 28px;
+      }
+  }
+
+  @media (max-width: 768px) {
+
+      .nxt-imageWithText__area .nxt-imageWithText__content,
+      .nxt-imageWithText__area .nxt-imageWithText__content-reversed {
+          flex-direction: column;
+          gap: 40px;
+          text-align: center;
+      }
+      .nxt-imageWithText__area  .nxt-imageWithText__content-image{
+          width: 100%;
+      }
+      .nxt-imageWithText__area  .nxt-imageWithText__text-wrapper {
+          align-items: center;
+      }
+
+      .nxt-imageWithText__area   .nxt-imageWithText__title {
+          font-size: 28px;
+      }
+
+        .nxt-imageWithText__area  .nxt-imageWithText__description {
+          font-size: 16px;
+          line-height: 26px;
+      }
+
+      .nxt-imageWithText__area   .nxt-imageWithText__image-wrapper img{
+          max-width: 350px;
+          margin: 0 auto;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .nxt-imageWithText__area  .nxt-imageWithText__title {
+          font-size: 24px;
+      }
+
+      .nxt-imageWithText__area .nxt-imageWithText__description {
+          font-size: 14px;
+          line-height: 24px;
+      }
+
+      .nxt-imageWithText__area   .nxt-imageWithText__button {
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          font-size: 16px;
+      }
+
+      .nxt-imageWithText__area   .nxt-imageWithText__image-wrapper img{
+          max-width: 280px;
+
+      }
+
+  }
+</style>
+
+<div class="nxt-imageWithText__container">
+  <div class="nxt-imageWithText__content{% if section.settings.reverse_layout %} nxt-imageWithText__content-reversed{% endif %}">
+    <div class="nxt-imageWithText__content-image">
+      <div class="nxt-imageWithText__image-wrapper">
+        {% if section.settings.image %}
+          {{
+            section.settings.image
+            | image_url: width: 388
+            | image_tag: class: 'nxt-imageWithText__image', alt: section.settings.title
+          }}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'nxt-imageWithText__image placeholder' }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="nxt-imageWithText__content-text">
+      <div class="nxt-imageWithText__text-wrapper">
+        {% if section.settings.title != blank %}
+          <div class="nxt-imageWithText__title">{{ section.settings.title }}</div>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <div class="nxt-imageWithText__description">{{ section.settings.description }}</div>
+        {% endif %}
+
+        {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+          <a href="{{ section.settings.button_link }}" class="nxt-imageWithText__button">
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

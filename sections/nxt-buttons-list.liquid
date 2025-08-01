@@ -1,0 +1,178 @@
+{% schema %}
+{
+  "name": "Buttons List",
+  "tag": "section",
+  "class": "nxt-buttonsList__area",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 25
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#F3EFDA"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Buttons List",
+      "category": "Buttons List",
+      "blocks": [
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Mission"
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Customers"
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Leadership"
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "Our board of Directors"
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "button_text": "News and Events"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+    .nxt-buttonsList__area {
+      background-color: {{ section.settings.background_color }};
+      padding-top: {{ section.settings.padding_top | times: 0.6 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.6 | round: 0 }}px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+      @media (min-width: 768px) {
+        .nxt-buttonsList__area {
+          padding-top: {{ section.settings.padding_top }}px;
+          padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+      }
+      .nxt-buttonsList__wrapper {
+        display: flex;
+        gap: 20px;
+        max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    overflow-x: auto;
+    scrollbar-width: none;
+      }
+      .nxt-buttonsList__button {
+        display: inline-block;
+        color: #3B132A;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 14.4px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  white-space: nowrap;
+      }
+      .nxt-buttonsList__button:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -50%;
+        width: 1px;
+        height: 100%;
+        background-color: #3B132A;
+        color: #3B132A;
+        transform: translate(50%, -50%);
+      }
+      @media (max-width: 1280px) {
+        .nxt-buttonsList__button:not(:last-child)::after {
+          right: -20%;
+        }
+      }
+      @media (max-width: 991px) {
+        .nxt-buttonsList__button:not(:last-child)::after {
+          right: -10px;
+        }
+      }
+      @media (max-width: 768px) {
+        .nxt-buttonsList__button {
+         font-size: 12px;
+        }
+      }
+{% endstyle %}
+
+<div class="nxt-container {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  <div class="nxt-buttonsList__wrapper">
+    {% for block in section.blocks %}
+      {% if block.type == 'button' %}
+        {% if block.settings.button_link != blank %}
+          <a href="{{ block.settings.button_link }}" class="nxt-buttonsList__button">
+            {{ block.settings.button_text }}
+          </a>
+        {% else %}
+          <span class="nxt-buttonsList__button">
+            {{ block.settings.button_text }}
+          </span>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

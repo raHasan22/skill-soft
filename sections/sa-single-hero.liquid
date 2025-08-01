@@ -1,0 +1,268 @@
+{% stylesheet %}
+  .journey-header {
+  background-color: #3B132A;
+  padding: 30px 0 39px;
+  color: #F3EFDA;
+  font-family: 'Montserrat', Arial, sans-serif;
+  line-height: 1.5;
+  }
+  .journey-header a{
+  color: inherit;
+  text-decoration: none;
+  }
+
+  .journey-header .container {
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  }
+  .journey-header .journey-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  }
+
+  .journey-header .journey-header__text {
+  max-width: 720px;
+  }
+
+  .journey-header .journey-header__brand {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  }
+
+  .journey-header .journey-header__title {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 108px;
+  line-height: 1.3;
+    margin-top: 10px;
+      color: inherit;
+  }
+
+  .journey-header .journey-header__stats {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  }
+
+  .journey-header .journey-header__stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  }
+
+  .journey-header .journey-header__icon {
+  width: 24px;
+  height: 24px;
+  background-color: #F3EFDA;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+
+  .journey-header .journey-header__icon--video::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #F3EFDA;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  }
+  a:empty, ul:empty, dl:empty, div:empty, section:empty, article:empty, p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty{
+    display: block !important;
+  }
+
+  .journey-header .journey-header__icon--book::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 20px;
+  background-color: #F3EFDA;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+  }
+
+  .journey-header .journey-header__icon--audio::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 19px;
+  background-color: #F3EFDA;
+  border-radius: 50% 50% 0 0;
+  }
+
+  .journey-header .journey-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  }
+
+  .journey-header .journey-header__social {
+  display: flex;
+  gap: 15px;
+  }
+
+  .journey-header .journey-header__social-link {
+  width: 30px;
+  height: 30px;
+  /* background-color: #F3EFDA; */
+  border-radius: 50%;
+  display: block;
+  }
+
+  .journey-header .journey-header__rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  }
+
+  .journey-header .journey-header__star {
+  width: 15px;
+  height: 15px;
+  background-color: #FF319F;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+
+  /* Responsive styles */
+  @media (max-width: 900px) {
+  .journey-header .journey-header__content {
+  flex-direction: column;
+  gap: 30px;
+  }
+
+  .journey-header .journey-header__actions {
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  }
+
+  .journey-header .journey-header__title {
+  margin-bottom: 40px;
+  }
+  }
+
+  @media (max-width: 600px) {
+  .journey-header .journey-header__stats {
+  flex-direction: column;
+  gap: 15px;
+  }
+
+  .journey-header .journey-header__title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  }
+  }
+{% endstylesheet %}
+
+<section class="journey-header">
+  <div class="container">
+    <div class="journey-header__content">
+      <div class="journey-header__text">
+        <a href="/collections/{{ product.collections.first.handle }}" class="journey-header__brand">
+          {{- product.collections.first.title -}}
+        </a>
+        <h1 class="journey-header__title">{{ product.title }}</h1>
+        <div class="journey-header__stats">
+          <div class="journey-header__stat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.8096 2.09506C17.2449 2.09506 21.651 6.5012 21.651 11.9364C21.651 17.3717 17.2449 21.7778 11.8096 21.7778C6.37439 21.7778 1.96826 17.3717 1.96826 11.9364C1.96826 6.5012 6.37439 2.09506 11.8096 2.09506ZM9.84136 7.99989V15.873L15.7462 11.9364L9.84136 7.99989Z" fill="#F3EFDA"/>
+            </svg>
+
+            <span>{{ product.metafields.custom.total_course_and_duration }}</span>
+          </div>
+          <div class="journey-header__stat">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5921 11.4936C10.2695 9.32847 7.15966 7.99989 3.73486 7.99989V18.8254C7.15966 18.8254 10.2695 20.154 12.5921 22.3191C14.9147 20.1638 18.0245 18.8254 21.4493 18.8254V7.99989C18.0245 7.99989 14.9147 9.32847 12.5921 11.4936ZM12.5921 7.99989C14.2258 7.99989 15.5445 6.68114 15.5445 5.04747C15.5445 3.41381 14.2258 2.09506 12.5921 2.09506C10.9584 2.09506 9.63969 3.41381 9.63969 5.04747C9.63969 6.68114 10.9584 7.99989 12.5921 7.99989Z" fill="#F3EFDA"/>
+            </svg>
+
+            <span>{{ product.metafields.custom.total_books_and_duration }}</span>
+          </div>
+          <div class="journey-header__stat">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.7628 2.09506C7.87159 2.09506 3.90552 6.06114 3.90552 10.9523V17.8413C3.90552 19.4749 5.22426 20.7937 6.85793 20.7937H9.81034V12.9206H5.87379V10.9523C5.87379 7.14369 8.95414 4.06334 12.7628 4.06334C16.5714 4.06334 19.6517 7.14369 19.6517 10.9523V12.9206H15.7152V20.7937H18.6676C20.3012 20.7937 21.62 19.4749 21.62 17.8413V10.9523C21.62 6.06114 17.6539 2.09506 12.7628 2.09506Z" fill="#F3EFDA"/>
+            </svg>
+
+            <span>{{ product.metafields.custom.total_audiobooks_and_duration }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="journey-header__actions">
+        <div class="journey-header__social">
+          <a
+            href="{{ product.metafields.custom.facebook_link }}"
+            class="journey-header__social-link journey-header__social-link--facebook"
+          >
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.157 0.495636C24.585 0.495636 31.4172 7.32788 31.4172 15.7559C31.4172 24.1839 24.585 31.0161 16.157 31.0161C7.72897 31.0161 0.896729 24.1839 0.896729 15.7559C0.896729 7.32788 7.72897 0.495636 16.157 0.495636ZM16.157 2.4647C8.81645 2.4647 2.86579 8.41536 2.86579 15.7559C2.86579 23.0964 8.81645 29.047 16.157 29.047C23.4975 29.047 29.4481 23.0964 29.4481 15.7559C29.4481 8.41536 23.4975 2.4647 16.157 2.4647ZM17.9523 7.38773C17.9799 7.38817 17.9994 7.38894 18.0102 7.38947H20.3044C20.4607 7.38947 20.5874 7.51741 20.5874 7.6753V10.3778C20.5874 10.5356 20.4607 10.6636 20.3044 10.6636H18.6397C18.0549 10.6636 17.7584 10.9457 17.7584 11.5021V13.3476H20.3044C20.3851 13.3476 20.4619 13.3824 20.5156 13.4433C20.5692 13.504 20.5947 13.5852 20.5854 13.6662L20.2497 16.6103C20.2333 16.7546 20.1124 16.8635 19.9687 16.8635H17.7583V24.8231C17.7583 24.981 17.6316 25.1089 17.4753 25.1089H14.2152C14.0589 25.1089 13.9323 24.981 13.9323 24.8231V16.8259H12.0095C11.8532 16.8259 11.7266 16.6979 11.7266 16.54V13.6334C11.7266 13.4755 11.8532 13.3476 12.0095 13.3476H14.028V11.1894C13.9878 10.9557 13.8194 9.60787 15.0305 8.48215C16.1234 7.4663 17.5071 7.38735 17.9052 7.38735L17.9523 7.38773Z" fill="#F3EFDA"/>
+            </svg>
+          </a>
+          <a
+            href="{{ product.metafields.custom.twitter_link }}"
+            class="journey-header__social-link journey-header__social-link--twitter"
+          >
+            <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.5552 0.495636C23.9827 0.495636 30.8154 7.32828 30.8154 15.7559C30.8154 24.1835 23.9827 31.0161 15.5552 31.0161C7.12757 31.0161 0.294922 24.1835 0.294922 15.7559C0.294922 7.32828 7.12757 0.495636 15.5552 0.495636ZM15.5552 2.4647C8.21055 2.4647 2.26398 8.41127 2.26398 15.7559C2.26398 23.1005 8.21055 29.047 15.5552 29.047C22.8998 29.047 28.8463 23.1005 28.8463 15.7559C28.8463 8.41127 22.8998 2.4647 15.5552 2.4647ZM6.35963 7.11169L13.4975 16.6518L6.32025 24.4099H7.93489L14.2162 17.6166L19.2964 24.4099H24.7901L17.2584 14.3381L23.9434 7.12153H22.3287L16.5397 13.3733L11.8632 7.12153H6.36948L6.35963 7.11169ZM8.7422 8.30297H11.2724L22.4272 23.2186H19.8969L8.7422 8.30297Z" fill="#F3EFDA"/>
+            </svg>
+          </a>
+          <a
+            href="{{ product.metafields.custom.linkedin_link }}"
+            class="journey-header__social-link journey-header__social-link--linkedin"
+          >
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.9534 0.495636C24.3813 0.495636 31.2136 7.32788 31.2136 15.7559C31.2136 24.1839 24.3813 31.0161 15.9534 31.0161C7.52535 31.0161 0.693115 24.1839 0.693115 15.7559C0.693115 7.32788 7.52535 0.495636 15.9534 0.495636ZM15.9534 2.4647C8.61284 2.4647 2.66218 8.41536 2.66218 15.7559C2.66218 23.0964 8.61284 29.047 15.9534 29.047C23.2939 29.047 29.2445 23.0964 29.2445 15.7559C29.2445 8.41536 23.2939 2.4647 15.9534 2.4647ZM19.8268 12.3086C21.9119 12.3086 23.6147 13.9461 23.719 16.0054L23.7241 16.2059V22.5421H20.3887V16.6483C20.3887 15.7239 19.6393 14.9746 18.715 14.9746C17.8429 14.9746 17.1317 15.6505 17.0593 16.5044L17.0532 16.6483V22.5421H13.7178V12.5357H17.0532V13.8628C17.6271 12.9303 18.8106 12.3086 19.8268 12.3086ZM11.4941 12.5357V22.5421H8.18258V12.5357H11.4941ZM9.83238 6.62997C10.9442 6.62997 11.8408 7.53855 11.8408 8.65037C11.8408 9.7596 10.9416 10.6588 9.83238 10.6588C8.72056 10.6588 7.81198 9.76219 7.81198 8.65037C7.81198 7.53453 8.71655 6.62997 9.83238 6.62997Z" fill="#F3EFDA"/>
+            </svg>
+          </a>
+          <a href="#" class="journey-header__social-link journey-header__social-link--share" onclick="shareProduct()">
+            <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.3515 0.495636C23.7795 0.495636 30.6118 7.32788 30.6118 15.7559C30.6118 24.1839 23.7795 31.0161 15.3515 31.0161C6.92355 31.0161 0.0913086 24.1839 0.0913086 15.7559C0.0913086 7.32788 6.92355 0.495636 15.3515 0.495636ZM15.3515 2.4647C8.01103 2.4647 2.06037 8.41536 2.06037 15.7559C2.06037 23.0964 8.01103 29.047 15.3515 29.047C22.6921 29.047 28.6427 23.0964 28.6427 15.7559C28.6427 8.41536 22.6921 2.4647 15.3515 2.4647ZM17.6455 12.4774C19.5072 14.339 19.5636 17.3301 17.8147 19.2602L17.6455 19.438L14.1603 22.9233C12.2404 24.8431 9.11946 24.8431 7.19963 22.9233C5.27979 21.0034 5.27979 17.8825 7.19963 15.9626L8.66658 14.4957C8.65674 15.303 8.78472 16.1103 9.06039 16.8881L8.59766 17.3508C7.43591 18.5027 7.43591 20.3733 8.59766 21.5252C9.74956 22.687 11.6202 22.687 12.7721 21.5252L16.2475 18.0498C17.4092 16.8979 17.4092 15.0273 16.2475 13.8754C15.8438 13.4914 15.8438 12.8613 16.2475 12.4774C16.6314 12.0934 17.2615 12.0934 17.6455 12.4774ZM22.5189 7.60395C24.4388 9.52379 24.4388 12.6448 22.5189 14.5646L21.052 16.0315C21.0618 15.2242 20.9338 14.4169 20.6582 13.649L21.1209 13.1764C22.2826 12.0245 22.2826 10.1539 21.1209 9.00199C19.969 7.84024 18.0984 7.84024 16.9465 9.00199L13.4711 12.4774C12.3093 13.6293 12.3093 15.4999 13.4711 16.6518C13.8747 17.0358 13.8747 17.6659 13.4711 18.0498C13.0871 18.4338 12.457 18.4338 12.0731 18.0498C10.2114 16.1882 10.155 13.1971 11.9038 11.267L12.0731 11.0892L15.5583 7.60395C17.4781 5.68412 20.5991 5.68412 22.5189 7.60395Z" fill="#F3EFDA"/>
+            </svg>
+          </a>
+        </div>
+        <div class="journey-header__rating">
+          <div class="journey-header__star"></div>
+          <span>
+            {{- product.metafields.custom.course_rating }} ({{ product.metafields.custom.course_rating_count }})</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function shareProduct() {
+    // Check if Web Share API is supported
+    if (navigator.share) {
+      navigator.share({
+        title: '{{ product.title }}',
+        text: 'Check out this course: {{ product.title }}',
+        url: window.location.href
+      })
+      .then(() => console.log('Share successful'))
+      .catch((error) => console.log('Error sharing:', error));
+    } else {
+      // Fallback for browsers that don't support the Web Share API
+      alert('Share feature is not supported in your browser. You can copy the URL manually.');
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Single Product Hero",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Single Product Hero Section"
+    }
+  ],
+}
+{% endschema %}

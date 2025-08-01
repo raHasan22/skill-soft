@@ -1,0 +1,427 @@
+{% schema %}
+{
+  "name": "SA Reversable Banner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Theme Settings"
+    },
+    {
+      "type": "select",
+      "id": "theme_mode",
+      "label": "Theme Mode",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Dark Mode"
+        },
+        {
+          "value": "light",
+          "label": "Light Mode"
+        }
+      ],
+      "default": "dark"
+    },
+    {
+      "type": "header",
+      "content": "Color Settings"
+    },
+    {
+      "type": "color",
+      "id": "dark_background",
+      "label": "Dark Mode Background",
+      "default": "#3B132A"
+    },
+    {
+      "type": "color",
+      "id": "dark_text_color",
+      "label": "Dark Mode Text Color",
+      "default": "#F3EFDA"
+    },
+    {
+      "type": "color",
+      "id": "light_background",
+      "label": "Light Mode Background",
+      "default": "transparent"
+    },
+    {
+      "type": "color",
+      "id": "light_text_color",
+      "label": "Light Mode Text Color",
+      "default": "#3B142A"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Learn Through Practice"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Provide learners with a safe space to practice critical business conversations and receive immediate, personalized feedback from an AI-powered coach.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Meet Skillsoft Caisy™"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_layout",
+      "label": "Reverse Layout",
+      "default": false,
+      "info": "Show text on the left and image on the right"
+    },
+    {
+      "type": "header",
+      "content": "Padding Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top Padding",
+      "min": 0,
+      "max": 150,
+      "step": 10,
+      "default": 120,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom Padding",
+      "min": 0,
+      "max": 150,
+      "step": 10,
+      "default": 120,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SA Reversable Banner",
+      "category": "Custom Content"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .srs-learn-through-practice-section{
+      padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px 0;
+  }
+  
+  /* Dark Mode Styles */
+  .srs-learn-through-practice-section[data-theme="dark"] {
+      background: {{ section.settings.dark_background }};
+  }
+  
+  .srs-learn-through-practice-section[data-theme="dark"] .srs-title {
+      color: {{ section.settings.dark_text_color }};
+  }
+  
+  .srs-learn-through-practice-section[data-theme="dark"] .srs-description {
+      color: {{ section.settings.dark_text_color }};
+  }
+  
+  /* Light Mode Styles */
+  .srs-learn-through-practice-section[data-theme="light"] {
+      background: {{ section.settings.light_background }};
+  }
+  
+  .srs-learn-through-practice-section[data-theme="light"] .srs-title {
+      color: {{ section.settings.light_text_color }};
+  }
+  
+  .srs-learn-through-practice-section[data-theme="light"] .srs-description {
+      color: {{ section.settings.light_text_color }};
+  }
+  .srs-learn-through-practice-section .srs-container{
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+  .srs-learn-through-practice-section .srs-content{
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      justify-content: space-between;
+  }
+
+  /* Reversed layout styles */
+  .srs-learn-through-practice-section .srs-content-reversed {
+      flex-direction: row-reverse;
+  }
+
+  .srs-learn-through-practice-section   .srs-content-image {
+      flex: 1;
+  }
+
+  .srs-learn-through-practice-section   .srs-image-wrapper {
+      max-width: 459px;
+      height: 464px;
+      position: relative;
+      padding: 8px;
+      overflow: hidden;
+      background: linear-gradient(90deg, #FF319F -200.79%, rgba(59, 19, 42, 0) 90.6%);
+      clip-path: url(#rounded-shape);
+  }
+
+  /* Adjust gradient direction for reversed layout */
+  .srs-learn-through-practice-section .srs-content-reversed .srs-image-wrapper {
+      background: linear-gradient(270deg, #FF319F -200.79%, rgba(59, 19, 42, 0) 90.6%);
+    margin-left: auto;
+  }
+
+  .srs-learn-through-practice-section  .srs-image {
+      max-width: 100%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      clip-path: url(#rounded-shape);
+  }
+
+  .srs-learn-through-practice-section  .srs-content-text {
+      flex: 1;
+  }
+
+  .srs-learn-through-practice-section    .srs-text-wrapper {
+      max-width: 599px;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+      display: inline-flex;
+  }
+
+  .srs-learn-through-practice-section   .srs-title {
+      align-self: stretch;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 36px;
+      font-family: Montserrat;
+      font-weight: 900;
+      word-wrap: break-word;
+        line-height: 1.4;
+  }
+
+  .srs-learn-through-practice-section   .srs-description {
+      align-self: stretch;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      font-family: Montserrat;
+      font-weight: 400;
+      line-height: 31.20px;
+      word-wrap: break-word;
+  }
+
+  .srs-learn-through-practice-section   .srs-button {
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      background: #FF319F;
+      border-radius: 4px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      display: inline-flex;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+  }
+
+  .srs-learn-through-practice-section    .srs-button:hover {
+      background: #e02a8a;
+  }
+
+  .srs-learn-through-practice-section   .srs-button-text {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      color: #F3EFDA;
+      font-size: 18px;
+      font-family: Montserrat;
+      font-weight: 500;
+      line-height: 18.24px;
+      word-wrap: break-word;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+      .srs-learn-through-practice-section .srs-content {
+          gap: 60px;
+      }
+
+      .srs-learn-through-practice-section     .srs-title {
+          font-size: 32px;
+      }
+
+      .srs-learn-through-practice-section   .srs-description {
+          font-size: 16px;
+          line-height: 28px;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .srs-learn-through-practice-section {
+          padding: {{ section.settings.padding_top | divided_by: 1.5 | round }}px 0 {{ section.settings.padding_bottom | divided_by: 1.5 | round }}px 0;
+      }
+
+      .srs-learn-through-practice-section .srs-content,
+      .srs-learn-through-practice-section .srs-content-reversed {
+          flex-direction: column;
+          gap: 40px;
+          text-align: center;
+      }
+      .srs-learn-through-practice-section  .srs-content-image{
+          width: 100%;
+      }
+      .srs-learn-through-practice-section  .srs-text-wrapper {
+          align-items: center;
+      }
+
+      .srs-learn-through-practice-section   .srs-title {
+          font-size: 28px;
+      }
+
+      .srs-learn-through-practice-section  .srs-description {
+          font-size: 16px;
+          line-height: 26px;
+      }
+
+      .srs-learn-through-practice-section   .srs-image-wrapper {
+          max-width: 350px;
+          height: 350px;
+          margin: 0 auto;
+      }
+
+      .srs-learn-through-practice-section  .srs-image-gradient {
+          max-width: 350px;
+          height: 350px;
+      }
+
+      .srs-learn-through-practice-section  .srs-image {
+          max-width: 334px;
+          height: 334px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .srs-learn-through-practice-section {
+          padding: {{ section.settings.padding_top | divided_by: 2 | round }}px 0 {{ section.settings.padding_bottom | divided_by: 2 | round }}px 0;
+      }
+
+      .srs-learn-through-practice-section .srs-container {
+          padding: 0 15px;
+      }
+
+      .srs-learn-through-practice-section  .srs-title {
+          font-size: 24px;
+      }
+
+      .srs-learn-through-practice-section .srs-description {
+          font-size: 14px;
+          line-height: 24px;
+      }
+
+      .srs-learn-through-practice-section   .srs-button {
+          padding-left: 25px;
+          padding-right: 25px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+      }
+
+      .srs-learn-through-practice-section   .srs-button-text {
+          font-size: 16px;
+      }
+
+      .srs-learn-through-practice-section   .srs-image-wrapper {
+          max-width: 280px;
+          height: 280px;
+      }
+
+      .srs-learn-through-practice-section  .srs-image-gradient {
+          max-width: 280px;
+          height: 280px;
+      }
+
+      .srs-learn-through-practice-section   .srs-image {
+          max-width: 264px;
+          height: 264px;
+      }
+  }
+</style>
+
+<!-- Shared SVG definitions for all clip paths -->
+<svg width="0" height="0" style="position: absolute;">
+  <defs>
+      <clipPath id="rounded-shape" clipPathUnits="objectBoundingBox">
+          <path d="M 0.024,0
+               Q 0,0 0,0.024
+               L 0,0.976
+               Q 0,1 0.024,1
+               L 0.976,0.92
+               Q 1,0.92 1,0.896
+               L 1,0.104
+               Q 1,0.08 0.976,0.08
+               L 0.024,0 Z" />
+      </clipPath>
+  </defs>
+</svg>
+<section class="srs-learn-through-practice-section" data-theme="{{ section.settings.theme_mode }}">
+  <div class="srs-container">
+    <div class="srs-content{% if section.settings.reverse_layout %} srs-content-reversed{% endif %}">
+      <div class="srs-content-image">
+        <div class="srs-image-wrapper">
+          {% if section.settings.image %}
+            {{
+              section.settings.image
+              | image_url: width: 443
+              | image_tag: class: 'srs-image', alt: section.settings.title
+            }}
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'srs-image placeholder' }}
+          {% endif %}
+        </div>
+      </div>
+      <div class="srs-content-text">
+        <div class="srs-text-wrapper">
+          {% if section.settings.title != blank %}
+            <div class="srs-title">{{ section.settings.title }}</div>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <div class="srs-description">{{ section.settings.description }}</div>
+          {% endif %}
+
+          {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+            <a href="{{ section.settings.button_link }}" class="primary-button_skillsoft">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,502 @@
+<style>
+    /* Header Styles */
+    .srs-header {
+      position: relative;
+      background: #3B142A;
+      /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15); */
+    }
+  .srs-header a{
+    text-decoration: none;
+  }
+    .header__container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      position: relative;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+    }
+
+    .header__logo {
+      color: #F3EFDA;
+      font-size: 40px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 800;
+      line-height: 52px;
+      z-index: 101; /* Above mobile menu */
+    }
+
+    .header__nav {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      gap: 40px;
+      justify-content: start;
+      margin-left: 40px;
+    }
+
+    .header__nav-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .header__nav-text {
+      color: #F3EFDA;
+      font-size: 18px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+    }
+
+    .header__nav-arrow {
+      width: 12px;
+      height: 8px;
+      background: #F3EFDA;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+      transition: transform 0.3s ease;
+    }
+
+    .header__nav-item:hover .header__nav-arrow {
+      transform: rotate(180deg);
+    }
+
+    .header__dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #3B142A;
+      min-width: 200px;
+      border-radius: 5px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      padding: 10px 0;
+      margin-top: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      z-index: 100;
+    }
+
+    .header__nav-item:hover .header__dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .header__dropdown-item {
+      padding: 10px 20px;
+      color: #F3EFDA;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      display: block;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .header__dropdown-item:hover {
+      background: rgba(243, 239, 218, 0.1);
+    }
+
+    .header__buttons {
+      display: flex;
+      gap: 50px;
+    }
+
+    .header__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0 20px;
+      transition: all 0.2s ease;
+    }
+
+    .header__btn--demo {
+      background: #F3EFDA;
+      color: #3B142A;
+    }
+
+    .header__btn--demo:hover {
+      background: #e8e4d0;
+    }
+
+    .header__btn--access {
+      background: #FF319F;
+      color: #F3EFDA;
+    }
+
+    .header__btn--access:hover {
+      background: #e62d8f;
+    }
+
+    /* Mobile Menu Button */
+    .header__menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 101;
+    }
+
+    .header__menu-icon {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: #F3EFDA;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .header__menu-icon::before,
+    .header__menu-icon::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #F3EFDA;
+      transition: all 0.3s ease;
+    }
+
+    .header__menu-icon::before {
+      top: -8px;
+    }
+
+    .header__menu-icon::after {
+      bottom: -8px;
+    }
+
+    /* Active state for mobile menu button */
+    .header__menu-btn.active .header__menu-icon {
+      background: transparent;
+    }
+
+    .header__menu-btn.active .header__menu-icon::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .header__menu-btn.active .header__menu-icon::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+      .header__container {
+        grid-template-columns: auto 1fr auto;
+        padding: 20px;
+      }
+
+      .header__nav {
+        display: none;
+      }
+
+      .header__buttons {
+        display: none;
+      }
+
+      .header__menu-btn {
+        display: block;
+        justify-self: end;
+      }
+
+      /* Mobile menu styles */
+      .header__mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #3B142A;
+        z-index: 100;
+        padding: 100px 20px 40px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        overflow-y: auto;
+      }
+
+      .header__mobile-menu.active {
+        transform: translateX(0);
+      }
+
+      .header__mobile-nav {
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+      }
+
+      .header__mobile-nav-item {
+        color: #F3EFDA;
+        font-size: 18px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        padding: 10px 0;
+      }
+
+      .header__mobile-nav-item.has-dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+      }
+
+      .header__mobile-nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(243, 239, 218, 0.2);
+      }
+
+      .header__mobile-dropdown-btn {
+        background: none;
+        border: none;
+        color: #F3EFDA;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 5px;
+        padding-right: 30px;
+      }
+
+      .header__mobile-dropdown {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 15px;
+      }
+
+      .header__mobile-dropdown.active {
+        max-height: 500px;
+      }
+
+      .header__mobile-dropdown-item {
+        display: block;
+        padding: 10px 15px;
+        color: #F3EFDA;
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+      }
+
+      .header__mobile-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .header__mobile-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 42px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header__logo {
+        font-size: 32px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .header__mobile-menu {
+        display: none;
+      }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1200px) {
+      /* .header__nav {
+        gap: 20px;
+      } */
+    }
+    @media (max-width: 1140px) {
+    .header__buttons{
+        gap: 10px;
+    }
+    .header__btn{
+        padding: 0 10px;
+    }
+    .header__nav{
+        margin-left: 10px;
+        gap: 10px;
+    }
+    }
+</style>
+
+<!-- Header with Shopify Liquid -->
+<header class="srs-header">
+  <div class="header__container">
+    <div class="header__logo">
+      <a href="{{ routes.root_url }}">
+        {% if section.settings.logo != blank %}
+          <img
+            src="{{ section.settings.logo | img_url: 'master' }}"
+            alt="{{ shop.name }}"
+            width="{{ section.settings.logo_width }}"
+            height="auto"
+          >
+        {% else %}
+          {{ shop.name }}
+        {% endif %}
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="header__nav">
+      {% for link in section.settings.menu.links %}
+        <div class="header__nav-item">
+          <a href="{{ link.url }}" class="header__nav-text">{{ link.title }}</a>
+          {% if link.links.size > 0 %}
+            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.10052 10.3793L0.856956 5.13577C0.730822 5.00963 0.667755 4.85647 0.667755 4.67628C0.667755 4.49609 0.730822 4.34293 0.856956 4.21679L1.45159 3.62216C1.57772 3.49603 1.73088 3.42846 1.91108 3.41945C2.09127 3.41044 2.24443 3.469 2.37056 3.59513L6.56001 7.78458L10.7495 3.59513C10.8756 3.469 11.0288 3.41044 11.2089 3.41945C11.3891 3.42846 11.5423 3.49603 11.6684 3.62216L12.2631 4.21679C12.3892 4.34293 12.4523 4.49609 12.4523 4.67628C12.4523 4.85647 12.3892 5.00963 12.2631 5.13577L7.0195 10.3793C6.89337 10.5235 6.7402 10.5956 6.56001 10.5956C6.37982 10.5956 6.22666 10.5235 6.10052 10.3793Z" fill="#F3EFDA"/>
+            </svg>
+
+            <div class="header__dropdown">
+              {% for childlink in link.links %}
+                <a href="{{ childlink.url }}" class="header__dropdown-item">{{ childlink.title }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </nav>
+
+    <!-- Desktop Buttons with conditional login/logout -->
+    <div class="header__buttons">
+      {% if customer %}
+        <a href="{{ routes.account_url }}" class="header__btn header__btn--demo">My Account</a>
+        <a href="{{ routes.account_logout_url }}" class="header__btn header__btn--access">Log Out</a>
+      {% else %}
+        <a href="{{ routes.account_login_url }}" class="header__btn header__btn--demo">Request A Demo</a>
+        <a href="{{ routes.account_login_url }}" class="header__btn header__btn--access">Free Access</a>
+      {% endif %}
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="header__menu-btn">
+      <span class="header__menu-icon"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div class="header__mobile-menu">
+    <nav class="header__mobile-nav">
+      {% for link in section.settings.menu.links %}
+        <div class="header__mobile-nav-item has-dropdown">
+          <div class="header__mobile-nav-header">
+            <span>{{ link.title }}</span>
+            {% if link.links.size > 0 %}
+              <button class="header__mobile-dropdown-btn">+</button>
+            {% endif %}
+          </div>
+          {% if link.links.size > 0 %}
+            <div class="header__mobile-dropdown">
+              {% for childlink in link.links %}
+                <a href="{{ childlink.url }}" class="header__mobile-dropdown-item">{{ childlink.title }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </nav>
+
+    <!-- Mobile Buttons with conditional login/logout -->
+    <div class="header__mobile-buttons">
+      {% if customer %}
+        <a href="{{ routes.account_url }}" class="header__mobile-btn header__btn--demo">My Account</a>
+        <a href="{{ routes.account_logout_url }}" class="header__mobile-btn header__btn--access">Log Out</a>
+      {% else %}
+        <a href="#" class="header__mobile-btn header__btn--demo">Request A Demo</a>
+        <a href="{{ routes.account_login_url }}" class="header__mobile-btn header__btn--access">Free Access</a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+<script>
+  // Hamburger menu functionality
+  document.addEventListener('DOMContentLoaded', function() {
+      const menuBtn = document.querySelector('.header__menu-btn');
+      const mobileMenu = document.querySelector('.header__mobile-menu');
+      const dropdownHeaders = document.querySelectorAll('.header__mobile-nav-header');
+
+      // Toggle mobile menu
+      menuBtn.addEventListener('click', function() {
+          this.classList.toggle('active');
+          mobileMenu.classList.toggle('active');
+      });
+
+      // Toggle mobile dropdowns when clicking anywhere on the header
+      dropdownHeaders.forEach(header => {
+          header.addEventListener('click', function() {
+              const dropdown = this.closest('.has-dropdown').querySelector('.header__mobile-dropdown');
+              const btn = this.querySelector('.header__mobile-dropdown-btn');
+
+              dropdown.classList.toggle('active');
+
+              // Change + to - and vice versa
+              if (btn.textContent === '+') {
+                  btn.textContent = '-';
+              } else {
+                  btn.textContent = '+';
+              }
+          });
+      });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "SA Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo width",
+      "default": 100
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SA Header",
+      "category": "Header"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,164 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "nxt_page_header_AFyprc": {
+      "type": "nxt-page-header",
+      "name": "Page Header",
+      "settings": {
+        "title": "",
+        "description_enable": false,
+        "description": "",
+        "hero_image": "shopify://shop_images/colleagues-learning-together-group-study_1.webp",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "background_color": "#3b132a"
+      }
+    },
+    "nxt_buttons_list_gXiakB": {
+      "type": "nxt-buttons-list",
+      "blocks": {
+        "button_CpJXR6": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Mission",
+            "button_link": "#srs-our-mission-template--25095789838714__sa_our_mission_j3L7wn"
+          }
+        },
+        "button_zp7Yym": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Customers",
+            "button_link": "#shopify-section-template--25095789838714__sa_reversable_banner_EEh8fX"
+          }
+        },
+        "button_33kn6q": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Leadership",
+            "button_link": "#shopify-section-template--25095789838714__nxt_image_with_text_FMWyMT"
+          }
+        },
+        "button_nzVeE7": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our board of Directors",
+            "button_link": ""
+          }
+        },
+        "button_xgk7EA": {
+          "type": "button",
+          "settings": {
+            "button_text": "News and Events",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_CpJXR6",
+        "button_zp7Yym",
+        "button_33kn6q",
+        "button_nzVeE7",
+        "button_xgk7EA"
+      ],
+      "name": "Buttons List",
+      "settings": {
+        "padding_top": 25,
+        "padding_bottom": 25,
+        "background_color": "#f3efda"
+      }
+    },
+    "sa_our_mission_j3L7wn": {
+      "type": "sa-our-mission",
+      "name": "SA Our Mission",
+      "settings": {
+        "title": "Our Mission",
+        "description": "<p>We believe every person has the potential to be amazing. And that there's a better way to bring out what they already have in them.</p><p>We know this because we've lived it. We've had the honor of training more people than anyone. We help democratize learning with powerful cloud-based tools and unmatched enterprise-wide smarts and skills.</p><p>Like our customers, we're always evolving – making sure individuals, teams, and enterprises have exactly what they need to unleash their edge.</p>",
+        "show_image": true,
+        "image": "shopify://shop_images/Vector_2_2.png",
+        "image_alt": "",
+        "image_style": "rounded",
+        "image_width": 236,
+        "image_height": 240,
+        "max_width": 1300,
+        "content_padding": 60,
+        "gap_between_parts": 68,
+        "left_part_width": 320,
+        "left_part_padding": 68,
+        "title_font_size": 36,
+        "title_line_height": 44,
+        "description_font_size": 18,
+        "description_line_height": 31,
+        "background_color": "#3b142a",
+        "text_color": "#ffffff",
+        "title_color": "#f3efda",
+        "accent_color": "#f3efda",
+        "show_border": true,
+        "border_width": 3,
+        "border_radius": 8,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_horizontal": 20,
+        "gradient_enabled": true,
+        "gradient_color": "#ff319f"
+      }
+    },
+    "sa_reversable_banner_EEh8fX": {
+      "type": "sa-reversable-banner",
+      "name": "SA Reversable Banner",
+      "settings": {
+        "theme_mode": "light",
+        "dark_background": "#3b132a",
+        "dark_text_color": "#f3efda",
+        "light_background": "rgba(0,0,0,0)",
+        "light_text_color": "#3b142a",
+        "image": "shopify://shop_images/Vector_2_1.webp",
+        "title": "Our Customers",
+        "description": "<p>Our customers include thousands of organizations across the globe.<br/><br/>They also include you. The curious, the compelled. The driven. Thecreative. We are here for those who run toward change. And thosethat need an extra nudge to take the next step in their journey.<br/><br/>No matter where you’re coming from or where you’re headed, it’s your journey. We’ll help you get there.</p>",
+        "button_text": "Learn More",
+        "button_link": "shopify://collections",
+        "reverse_layout": false,
+        "padding_top": 50,
+        "padding_bottom": 120
+      }
+    },
+    "nxt_image_with_text_FMWyMT": {
+      "type": "nxt-image-with-text",
+      "name": "Image with Text Advanced",
+      "settings": {
+        "image": "shopify://shop_images/Frame_60.png",
+        "title": "OUR LEADERSHIP",
+        "description": "<p>Driven to build a future-fit workforce, skilled and ready for the jobs of tomorrow. </p><p>Vision, expertise and a growth mindset that never quits. Our team thrives on helping you achieve more.</p>",
+        "button_text": "Meet the Team",
+        "button_link": "shopify://collections/all",
+        "reverse_layout": true,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "background_color": "#f3efda"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "nxt_page_header_AFyprc",
+    "nxt_buttons_list_gXiakB",
+    "sa_our_mission_j3L7wn",
+    "sa_reversable_banner_EEh8fX",
+    "nxt_image_with_text_FMWyMT"
+  ]
+}

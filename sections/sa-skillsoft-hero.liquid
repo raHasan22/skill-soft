@@ -1,0 +1,273 @@
+{% style %}
+      .rh_skillsoft-hero-sec {
+    background-color: #3b132a;
+    padding: {{ section.settings.padding_top }}px {{ section.settings.padding_horizontal }}px {{ section.settings.padding_bottom }}px {{ section.settings.padding_horizontal }}px;
+  }
+  .rh_skillsoft-hero-sec .container_rh {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: {{ section.settings.container_padding_top }}px 0 {{ section.settings.container_padding_bottom }}px;
+    position: relative;
+  }
+  .rh_skillsoft-hero-sec .container-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+  }
+  .rh_skillsoft-hero-sec .container-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .rh_skillsoft-hero-sec .container-content_rh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .rh_skillsoft-hero-sec .container-content_rh .fist-title_rh {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f3efda;
+    margin: 0 0 20px;
+  }
+  .rh_skillsoft-hero-sec .container-content_rh .second-title_rh {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f3efda;
+    margin: 0 0 40px;
+  }
+  .rh_skillsoft-hero-sec .container-content_rh .description_rh {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f3efda;
+    margin: 0 0 40px;
+  }
+
+  @media (max-width: 1024px) {
+    .rh_skillsoft-hero-sec .container-content_rh .fist-title_rh {
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    .rh_skillsoft-hero-sec .container-content_rh .second-title_rh {
+      font-size: 54px;
+      line-height: 60px;
+    }
+
+    .rh_skillsoft-hero-sec .container-content_rh .description_rh {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .rh_skillsoft-hero-sec .container-content_rh .fist-title_rh {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    .rh_skillsoft-hero-sec .container-content_rh .second-title_rh {
+      font-size: 44px;
+      line-height: 52px;
+    }
+
+    .rh_skillsoft-hero-sec .container-content_rh .description_rh {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .rh_skillsoft-hero-sec .container-content_rh .fist-title_rh {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .rh_skillsoft-hero-sec .container-content_rh .second-title_rh {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    .rh_skillsoft-hero-sec .container-content_rh .description_rh {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+{% endstyle %}
+
+{% liquid
+  assign bg_image = section.settings.background_image
+  if bg_image == blank
+    assign bg_image_url = 'bg-hero.png' | asset_url
+  else
+    assign bg_image_url = bg_image | image_url
+  endif
+%}
+
+<div class="rh_skillsoft-hero-sec">
+  <div class="container_rh">
+    <div class="container-bg">
+      <img
+        src="{{ bg_image_url }}"
+        alt="{{ section.settings.background_image.alt | default: 'Hero background' }}"
+        class="bg-hero"
+      >
+    </div>
+    <div class="container-content_rh">
+      {% if section.settings.first_title != blank %}
+        <div class="fist-title_rh">
+          <span>{{ section.settings.first_title }}</span>
+        </div>
+      {% endif %}
+      {% if section.settings.second_title != blank %}
+        <div class="second-title_rh">
+          <span>{{ section.settings.second_title }}</span>
+        </div>
+      {% endif %}
+      {% if section.settings.description != blank %}
+        <div class="description_rh">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a class="primary-button_skillsoft" href="{{ section.settings.button_link }}">
+          {{- section.settings.button_label -}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Skillsoft Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image",
+      "info": "If no image is selected, will fallback to bg-hero.png from assets"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Left/Right padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "container_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Container top padding",
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "container_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Container bottom padding",
+      "default": 45
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "first_title",
+      "label": "First title",
+      "default": "Unlock the Potential"
+    },
+    {
+      "type": "text",
+      "id": "second_title",
+      "label": "Second title",
+      "default": "of Your Workforce"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Bridge the gap between capability and success with Skillsoft"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Request a demo"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SA Skillsoft Hero"
+    }
+  ]
+}
+{% endschema %}

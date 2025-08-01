@@ -1,0 +1,489 @@
+{% comment %}
+  Dynamic Footer Section for Shopify
+  Features:
+  - Dynamic menu selection
+  - Logo image upload
+  - Social media links
+  - Padding controls
+  - Color customization
+{% endcomment %}
+
+<style>
+        .srs-footer {
+          position: relative;
+          background: {{ section.settings.background_color }};
+          padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+          min-height: 500px;
+          overflow: hidden;
+          border-radius: 8px;
+          clip-path: polygon(0 12%, 100% 1%, 100% 100%, 0% 100%);
+        }
+
+        .srs-footer::before {
+          max-width: 716px;
+          content: '';
+          display: block;
+          position: absolute;
+          top: 17px;
+          right: 0;
+          width: 100%;
+          height: 30px;
+          background: {{ section.settings.accent_color }};
+          border-radius: 8px 8px 0 0;
+          z-index: 1;
+          transform: translateY(-10px) skewX(-4deg);
+        }
+
+       .srs-footer .footer__container {
+          position: relative;
+          z-index: 2;
+          max-width: 1300px;
+          margin: 0 auto;
+          display: flex;
+          gap: 40px;
+          align-items: flex-start;
+          padding: 0 24px;
+        }
+
+      .srs-footer  .footer__brand-social {
+          display: flex;
+          flex-direction: column;
+          gap: 48px;
+          max-width: 295.53px;
+          width: 100%;
+        }
+
+       .srs-footer .footer__logo {
+          {% if section.settings.logo != blank %}
+            max-width: {{ section.settings.logo_max_width }}px;
+            height: auto;
+          {% else %}
+            font-size: 64px;
+            font-weight: 900;
+            color: {{ section.settings.text_color }};
+            font-family: 'Montserrat', Arial, sans-serif;
+            line-height: 1;
+          {% endif %}
+        }
+
+       .srs-footer .footer__logo img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+      .srs-footer  .footer__social {
+          display: flex;
+          gap: 24px;
+        }
+
+      .srs-footer  .footer__social-link {
+          color: {{ section.settings.accent_color }};
+          font-size: 28px;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          transition: color 0.2s;
+        }
+
+      .srs-footer  .footer__social-link:hover {
+          color: {{ section.settings.text_color }};
+        }
+
+       .srs-footer .footer__nav {
+          display: grid;
+          grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
+          gap: 32px;
+          flex: 1;
+        }
+
+       .srs-footer .footer__column {
+          min-width: 0;
+        }
+
+       .srs-footer .footer__heading {
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: {{ section.settings.text_color }};
+          margin-bottom: 24px;
+          font-family: 'Montserrat', Arial, sans-serif;
+        }
+
+       .srs-footer .footer__list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+        }
+
+      .srs-footer  .footer__link {
+          color: {{ section.settings.text_color }};
+          text-decoration: none;
+          font-size: 16px;
+          font-family: 'Montserrat', Arial, sans-serif;
+          font-weight: 400;
+          line-height: 1.5;
+          transition: color 0.2s;
+        }
+
+       .srs-footer .footer__link:hover {
+          color: {{ section.settings.accent_color }};
+        }
+    @media (max-width: 1024px){
+      .srs-footer .footer__nav{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+        @media (max-width: 900px) {
+        .srs-footer  .footer__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            padding: 40px 16px 32px 16px;
+          }
+
+         .srs-footer .footer__brand-social {
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 32px;
+           max-width: none;
+          }
+
+        .srs-footer  .footer__nav {
+            grid-template-columns: repeat({{ section.settings.columns_tablet }}, 1fr);
+            gap: 24px;
+          }
+        }
+
+        @media (max-width: 600px) {
+        .srs-footer  .footer__container {
+            padding: 24px 8px 16px 8px;
+          }
+  .srs-footer .footer__brand-social{
+    flex-direction: column;
+  }
+        .srs-footer  .footer__logo {
+            {% if section.settings.logo != blank %}
+              max-width: {{ section.settings.logo_max_width_mobile }}px;
+            {% else %}
+              font-size: 40px;
+            {% endif %}
+          }
+
+         .srs-footer .footer__nav {
+            grid-template-columns: repeat({{ section.settings.columns_mobile }}, 1fr);
+            gap: 16px;
+          }
+
+         .srs-footer .footer__heading {
+            font-size: 16px;
+            margin-bottom: 12px;
+          }
+
+         .srs-footer .footer__list {
+            gap: 10px;
+          }
+        }
+</style>
+
+<footer class="srs-footer">
+  <div class="footer__container">
+    <div class="footer__brand-social">
+      <div class="footer__logo">
+        {% if section.settings.logo != blank %}
+          <img
+            src="{{ section.settings.logo | img_url: 'master' }}"
+            alt="{{ section.settings.logo.alt | default: shop.name }}"
+          >
+        {% else %}
+          {{ shop.name }}
+        {% endif %}
+      </div>
+
+      {% if section.settings.show_social_links %}
+        <nav class="footer__social" aria-label="Social media">
+          {% if section.settings.facebook_url != blank %}
+            <a
+              href="{{ section.settings.facebook_url }}"
+              class="footer__social-link"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="24" height="34" viewBox="0 0 24 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.0938 5.16162C22.4648 5.16162 23.625 6.32178 23.625 7.69287V26.2554C23.625 27.6792 22.4648 28.7866 21.0938 28.7866H13.8164V20.771H16.875L17.4551 16.9741H13.8164V14.5483C13.8164 13.4937 14.3438 12.4917 15.9785 12.4917H17.6133V9.2749C17.6133 9.2749 16.1367 9.01123 14.6602 9.01123C11.707 9.01123 9.75586 10.8569 9.75586 14.1265V16.9741H6.43359V20.771H9.75586V28.7866H2.53125C1.10742 28.7866 0 27.6792 0 26.2554V7.69287C0 6.32178 1.10742 5.16162 2.53125 5.16162H21.0938Z" fill="currentColor"/>
+              </svg>
+            </a>
+          {% endif %}
+
+          {% if section.settings.linkedin_url != blank %}
+            <a
+              href="{{ section.settings.linkedin_url }}"
+              class="footer__social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5675 5.16162C23.464 5.16162 24.255 5.95264 24.255 6.90186V27.0991C24.255 28.0483 23.464 28.7866 22.5675 28.7866H2.26477C1.36829 28.7866 0.630005 28.0483 0.630005 27.0991V6.90186C0.630005 5.95264 1.36829 5.16162 2.26477 5.16162H22.5675ZM7.74915 25.4116V14.1792H4.26868V25.4116H7.74915ZM6.00891 12.5972C7.11633 12.5972 8.01282 11.7007 8.01282 10.5933C8.01282 9.48584 7.11633 8.53662 6.00891 8.53662C4.84875 8.53662 3.95227 9.48584 3.95227 10.5933C3.95227 11.7007 4.84875 12.5972 6.00891 12.5972ZM20.88 25.4116V19.2417C20.88 16.2358 20.1945 13.8628 16.6613 13.8628C14.9738 13.8628 13.8136 14.812 13.339 15.7085H13.2863V14.1792H9.96399V25.4116H13.4445V19.8745C13.4445 18.3979 13.7081 16.9741 15.5538 16.9741C17.3468 16.9741 17.3468 18.6616 17.3468 19.9272V25.4116H20.88Z" fill="currentColor"/>
+              </svg>
+            </a>
+          {% endif %}
+
+          {% if section.settings.youtube_url != blank %}
+            <a
+              href="{{ section.settings.youtube_url }}"
+              class="footer__social-link"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="31" height="34" viewBox="0 0 31 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.2112 10.0659C29.844 12.2808 29.844 17.0269 29.844 17.0269C29.844 17.0269 29.844 21.7202 29.2112 23.9878C28.8948 25.2534 27.8928 26.2026 26.6799 26.519C24.4124 27.0991 15.4475 27.0991 15.4475 27.0991C15.4475 27.0991 6.42993 27.0991 4.16235 26.519C2.94946 26.2026 1.94751 25.2534 1.6311 23.9878C0.998291 21.7202 0.998291 17.0269 0.998291 17.0269C0.998291 17.0269 0.998291 12.2808 1.6311 10.0659C1.94751 8.80029 2.94946 7.79834 4.16235 7.48193C6.42993 6.84912 15.4475 6.84912 15.4475 6.84912C15.4475 6.84912 24.4124 6.84912 26.6799 7.48193C27.8928 7.79834 28.8948 8.80029 29.2112 10.0659ZM12.4944 21.2983L19.9827 17.0269L12.4944 12.7554V21.2983Z" fill="currentColor"/>
+              </svg>
+            </a>
+          {% endif %}
+
+          {% if section.settings.instagram_url != blank %}
+            <a
+              href="{{ section.settings.instagram_url }}"
+              class="footer__social-link"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.4525 14.1792C13.9818 14.1792 15.2474 15.4448 15.2474 16.9741C15.2474 18.5562 13.9818 19.8218 12.4525 19.8218C10.8705 19.8218 9.60484 18.5562 9.60484 16.9741C9.60484 15.4448 10.8705 14.1792 12.4525 14.1792ZM18.9916 12.0171C19.4662 13.1245 19.3607 15.7612 19.3607 16.9741C19.3607 18.2397 19.4662 20.8765 18.9916 21.9839C18.7279 22.7222 18.1478 23.3022 17.4095 23.5659C16.3021 24.0405 13.6654 23.9351 12.4525 23.9351C11.1869 23.9351 8.55016 24.0405 7.44273 23.5659C6.70445 23.3022 6.12437 22.7222 5.8607 21.9839C5.43883 20.8765 5.49156 18.2397 5.49156 16.9741C5.49156 15.7612 5.43883 13.1245 5.8607 12.0171C6.12437 11.2788 6.70445 10.6987 7.44273 10.4351C8.55016 9.96045 11.1869 10.0659 12.4525 10.0659C13.6654 10.0659 16.3021 9.96045 17.4095 10.4351C18.1478 10.6987 18.7279 11.2788 18.9916 12.0171ZM12.4525 21.2983V21.3511C14.8255 21.3511 16.7767 19.3999 16.7767 17.0269V16.9741C16.7767 14.6011 14.8255 12.6499 12.4525 12.6499C10.0267 12.6499 8.12828 14.6011 8.12828 16.9741C8.12828 19.3999 10.0267 21.2983 12.4525 21.2983ZM16.9349 13.4937C17.4623 13.4937 17.9369 13.0718 17.9369 12.4917C17.9369 11.9116 17.4623 11.4897 16.9349 11.4897C16.3548 11.4897 15.933 11.9116 15.933 12.4917C15.933 13.0718 16.3548 13.4937 16.9349 13.4937ZM21.7337 5.16162C23.1048 5.16162 24.265 6.32178 24.265 7.69287V26.2554C24.265 27.6792 23.1048 28.7866 21.7337 28.7866H3.17125C1.74742 28.7866 0.639999 27.6792 0.639999 26.2554V7.69287C0.639999 6.32178 1.74742 5.16162 3.17125 5.16162H21.7337ZM20.7845 20.4546C20.89 19.0835 20.89 14.9175 20.7845 13.5464C20.7318 12.1753 20.4154 10.9624 19.4662 10.0132C18.4642 9.01123 17.2513 8.69482 15.933 8.64209C14.5091 8.53662 10.3431 8.53662 8.97203 8.64209C7.60094 8.69482 6.38805 9.01123 5.43883 9.96045C4.43687 10.9624 4.12047 12.1753 4.06773 13.4937C3.96227 14.9175 3.96227 19.0835 4.06773 20.4546C4.12047 21.8257 4.43687 23.0386 5.43883 23.9878C6.38805 24.9897 7.60094 25.3062 8.97203 25.3589C10.3431 25.4644 14.5091 25.4644 15.933 25.3589C17.2513 25.3062 18.4642 24.9897 19.4662 23.9878C20.4154 23.0386 20.7318 21.8257 20.7845 20.4546Z" fill="currentColor"/>
+              </svg>
+            </a>
+          {% endif %}
+
+          {% if section.settings.twitter_url != blank %}
+            <a
+              href="{{ section.settings.twitter_url }}"
+              class="footer__social-link"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" fill="currentColor"/>
+              </svg>
+            </a>
+          {% endif %}
+        </nav>
+      {% endif %}
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer menu">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'menu' %}
+            {% if block.settings.menu != blank %}
+              <div class="footer__column" {{ block.shopify_attributes }}>
+                <h3 class="footer__heading">{{ block.settings.title | default: block.settings.menu.title }}</h3>
+                <ul class="footer__list">
+                  {% for link in block.settings.menu.links %}
+                    <li>
+                      <a href="{{ link.url }}" class="footer__link">{{ link.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+    </nav>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "SA Footer",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Logo Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo Max Width (Desktop)",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width_mobile",
+      "min": 50,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo Max Width (Mobile)",
+      "default": 150
+    },
+    {
+      "type": "header",
+      "content": "Social Media Links"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_links",
+      "label": "Show Social Media Links",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "facebook_url",
+      "label": "Facebook URL"
+    },
+    {
+      "type": "url",
+      "id": "linkedin_url",
+      "label": "LinkedIn URL"
+    },
+    {
+      "type": "url",
+      "id": "youtube_url",
+      "label": "YouTube URL"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram URL"
+    },
+    {
+      "type": "url",
+      "id": "twitter_url",
+      "label": "Twitter URL"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Number of Columns (Desktop)",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Number of Columns (Tablet)",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Number of Columns (Mobile)",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 20,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 140
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 20,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 140
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#F3EFDA"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#FF319F"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#141C36"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Menu Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Column Title",
+          "info": "Leave empty to use menu title"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SA Footer",
+      "blocks": [
+        {
+          "type": "menu"
+        },
+        {
+          "type": "menu"
+        },
+        {
+          "type": "menu"
+        },
+        {
+          "type": "menu"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

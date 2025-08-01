@@ -1,0 +1,336 @@
+{% style %}
+      .rh_skillsoft-learning-talent-sec {
+    background-color: #3b132a;
+    padding: {{ section.settings.padding_top }}px {{ section.settings.padding_horizontal }}px {{ section.settings.padding_bottom }}px {{ section.settings.padding_horizontal }}px;
+        margin-bottom: -90px;
+  }
+
+  .rh_skillsoft-learning-talent-sec .container_rh {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .rh_skillsoft-learning-talent-sec .rh_main_content_rh {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .rh_skillsoft-learning-talent-sec .rh_text_section_rh {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    max-width: 686px;
+    width: 100%;
+  }
+
+  .rh_skillsoft-learning-talent-sec .rh_title_rh {
+    text-align: center;
+    color: #f3efda;
+    font-size: 36px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    word-wrap: break-word;
+    line-height: 1.2;
+  }
+
+  .rh_skillsoft-learning-talent-sec .rh_description_rh {
+    text-align: center;
+    color: #f3efda;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    line-height: 31.2px;
+    word-wrap: break-word;
+  }
+
+  .rh_skillsoft-learning-talent-sec .rh_logos_container_rh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .rh_skillsoft-learning-talent-sec .rh_logo_item_rh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    min-height: 105px;
+    min-width: 140px;
+    flex: 0 0 auto;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .rh_skillsoft-learning-talent-sec .rh_logo_item_rh:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .rh_skillsoft-learning-talent-sec .rh_logo_image_rh {
+    max-width: 100%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+  }
+
+  @media (max-width: 1024px) {
+    .rh_skillsoft-learning-talent-sec {
+      padding: 80px 20px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_title_rh {
+      font-size: 32px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logos_container_rh {
+      gap: 16px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logo_item_rh {
+      padding: 16px;
+      min-height: 90px;
+      min-width: 120px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logo_image_rh {
+      max-height: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .rh_skillsoft-learning-talent-sec {
+      padding: 60px 16px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_title_rh {
+      font-size: 28px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_description_rh {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logos_container_rh {
+      gap: 12px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logo_item_rh {
+      padding: 14px;
+      min-height: 80px;
+      min-width: 100px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logo_image_rh {
+      max-height: 35px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .rh_skillsoft-learning-talent-sec .rh_main_content_rh {
+      gap: 30px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_text_section_rh {
+      gap: 16px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_title_rh {
+      font-size: 24px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_description_rh {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logos_container_rh {
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logo_item_rh {
+      padding: 12px;
+      min-height: 70px;
+      min-width: 80px;
+    }
+
+    .rh_skillsoft-learning-talent-sec .rh_logo_image_rh {
+      max-height: 30px;
+    }
+  }
+{% endstyle %}
+<div class="rh_skillsoft-learning-talent-sec">
+  <div class="container_rh">
+    <div class="rh_main_content_rh">
+      <div class="rh_text_section_rh">
+        {% if section.settings.title != blank %}
+          <div class="rh_title_rh">
+            {{ section.settings.title }}
+          </div>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <div class="rh_description_rh">
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+      </div>
+      <div class="rh_logos_container_rh">
+        {% for block in section.blocks %}
+          <div class="rh_logo_item_rh" {{ block.shopify_attributes }}>
+            {% if block.settings.logo != blank %}
+              <img
+                src="{{ block.settings.logo | image_url: width: 300 }}"
+                alt="{{ block.settings.logo_alt | default: block.settings.logo.alt | default: 'Integration partner' }}"
+                class="rh_logo_image_rh"
+              >
+            {% else %}
+              <img
+                src="https://dummyimage.com/140x50/f5f5f5/666&text=LOGO"
+                alt="{{ block.settings.logo_alt | default: 'Logo placeholder' }}"
+                class="rh_logo_image_rh"
+              >
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Learning & Talent",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 10,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 210
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Left/Right padding",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Integrate Skillsoft With Your Learning and Talent Solutions"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Seamlessly Blend Our Transformative Learning Experiences With Your Daily Use Tools and Tech, Including LMS and HM Platforms"
+    },
+
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Integration Partner Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo image"
+        },
+        {
+          "type": "text",
+          "id": "logo_alt",
+          "label": "Logo alt text",
+          "default": "Integration partner"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "SA Learning & Talent Integration",
+      "blocks": [
+        {
+          "type": "logo",
+          "settings": {
+            "logo_alt": "Workday"
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "logo_alt": "SuccessFactors"
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "logo_alt": "Cornerstone"
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "logo_alt": "Degreed"
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "logo_alt": "LinkedIn"
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "logo_alt": "Integration Partner"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

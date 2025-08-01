@@ -1,0 +1,124 @@
+.nxt-pageHeader__area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 107px 15px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.nxt-pageHeader__container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.nxt-pageHeader__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  z-index: 2;
+  max-width: 613px;
+  width: 100%;
+}
+
+.nxt-pageHeader__title-wrapper {
+  width: 100%;
+  max-width: 567px;
+}
+
+.nxt-pageHeader__title {
+  font-family: "Montserrat", sans-serif;
+  color: #f3efda;
+  margin: 0 !important;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.nxt-pageHeader__description {
+  color: #f3efda;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 21.83px;
+  line-height: 28px;
+  letter-spacing: -0.25px;
+  margin: 10px 0 0 !important;
+}
+
+.nxt-pageHeader__image-area {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 534px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+}
+
+.nxt-pageHeader__image {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+  overflow: hidden;
+  display: flex;
+}
+
+.nxt-pageHeader__image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .nxt-pageHeader__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .nxt-pageHeader__content {
+    max-width: 531px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nxt-pageHeader__title {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 991px) {
+  .nxt-pageHeader__area {
+    align-items: start;
+  }
+  .nxt-pageHeader__content {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 613px;
+  }
+  .nxt-pageHeader__image-area {
+    position: relative;
+    margin: 0 auto;
+  }
+  .nxt-pageHeader__title-wrapper {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .nxt-pageHeader__content {
+    gap: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .nxt-pageHeader__title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
