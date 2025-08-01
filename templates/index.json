@@ -9,171 +9,2215 @@
  */
 {
   "sections": {
-    "sa_video_section_zmANX6": {
-      "type": "sa-video-section",
-      "name": "SA Video Section",
+    "collection_list_slider_6qbNfj": {
+      "type": "collection-list-slider",
+      "blocks": {
+        "featured_collection_L9N3Tg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kids-plush",
+            "title": ""
+          }
+        },
+        "featured_collection_gxdACj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beauty",
+            "title": ""
+          }
+        },
+        "featured_collection_4H9LzM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "living-and-sleeping",
+            "title": ""
+          }
+        },
+        "featured_collection_jMA9xm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travel",
+            "title": ""
+          }
+        },
+        "featured_collection_9gfAHY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "men",
+            "title": ""
+          }
+        },
+        "featured_collection_jzNEDn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women",
+            "title": ""
+          }
+        },
+        "featured_collection_mfiHFc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kids-plush",
+            "title": ""
+          }
+        },
+        "featured_collection_h394b4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "living-and-sleeping",
+            "title": ""
+          }
+        },
+        "featured_collection_K4jjLt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beauty",
+            "title": ""
+          }
+        },
+        "featured_collection_fkaYzX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "men",
+            "title": ""
+          }
+        },
+        "featured_collection_7Xa67w": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "women",
+            "title": ""
+          }
+        },
+        "featured_collection_UCP4nB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "offers",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_L9N3Tg",
+        "featured_collection_gxdACj",
+        "featured_collection_4H9LzM",
+        "featured_collection_jMA9xm",
+        "featured_collection_9gfAHY",
+        "featured_collection_jzNEDn",
+        "featured_collection_mfiHFc",
+        "featured_collection_h394b4",
+        "featured_collection_K4jjLt",
+        "featured_collection_fkaYzX",
+        "featured_collection_7Xa67w",
+        "featured_collection_UCP4nB"
+      ],
+      "custom_css": [],
       "settings": {
-        "padding_top": 90,
-        "padding_bottom": 90,
-        "background_color": "#f3efda",
-        "title": "Are You Ready?",
-        "description": "<p>The way employees work, learn, and grow is evolving at an unprecedented pace, with 85% of jobs by 2030 expected to require skills that don't yet exist. Traditional workforce development approaches – rooted in content libraries and course completions – are no longer sufficient.</p><p>Organizations must rethink their approach to career development and talent optimization, focusing on transformative learning strategies that close the gap between potential and performance.</p>",
-        "video_thumbnail": "shopify://shop_images/Rectangle_1723.png",
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/7b7c5de6287a4a928375a5a1a4b13a6c.mp4",
-        "cta_text": "See Where You Stand",
-        "cta_link": "/",
-        "cta_color": "#ff319f",
-        "cta_text_color": "#f3efda"
+        "container": "fixed",
+        "color_scheme": "",
+        "section_header_alignment": "center",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "rounded_card_image": true,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "show_section_divider": false,
+        "divider_width": "fixed"
       }
     },
-    "sa_reversable_banner_dqnaXm": {
-      "type": "sa-reversable-banner",
-      "name": "SA Reversable Banner",
+    "slideshow_q3U4Jn": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_JhU8hg": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "background": "shopify://shop_images/vintage-shopping.jpg",
+            "image_overlay_opacity": 30,
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "subheading": "Cotton Made",
+            "title": "New Season July",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "hd1",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "Shop collection",
+            "button_link": "shopify://collections/all",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "enable_preload_image": true
+          }
+        },
+        "slide_U9bPyj": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "background": "shopify://shop_images/fashionable-man-in-hat.jpg",
+            "image_overlay_opacity": 30,
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "subheading": "Modern Elegance",
+            "title": "Summer Sale",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "hd1",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "Shop collection",
+            "button_link": "shopify://collections/offers",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "enable_preload_image": false
+          }
+        },
+        "slide_cQ6eF8": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "background": "shopify://shop_images/flatlay-iron-skillet-with-meat-and-other-food.jpg",
+            "image_overlay_opacity": 30,
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "subheading": "Contemporary Grace",
+            "title": "Dining & Kitchen",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "hd1",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "Shop collection",
+            "button_link": "shopify://collections/cooking-and-dining",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "enable_preload_image": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_JhU8hg",
+        "slide_U9bPyj",
+        "slide_cQ6eF8"
+      ],
       "settings": {
-        "image": "shopify://shop_images/Vector_2.png",
-        "title": "Learn Through Practice",
-        "description": "<p>Provide learners with a safe space to practice critical business conversations and receive immediate, personalized feedback from an AI-powered coach.</p>",
-        "button_text": "Meet Skillsoft Caisy™",
-        "button_link": "#",
-        "reverse_layout": false,
+        "container": "fixed",
+        "slide_height": "small",
+        "show_controls": true,
+        "autoplay": true,
+        "autoplay_delay": 6,
+        "show_text_below": false,
+        "text_alignment_mobile": "center",
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "featured_collection_bdaamt": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_ydJPzX": {
+          "type": "collection",
+          "settings": {
+            "collection": "all",
+            "title": "New Arrivals",
+            "show_banner": false,
+            "color_scheme": "scheme-inverse",
+            "card_link": "",
+            "image_overlay_opacity": 20,
+            "content_position": "split-bottom-button",
+            "content_alignment": "left",
+            "subheading": "",
+            "subheading_style": "",
+            "heading": "",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "Shop now",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        },
+        "collection_E83rKg": {
+          "type": "collection",
+          "settings": {
+            "collection": "offers",
+            "title": "Hot Items",
+            "show_banner": false,
+            "color_scheme": "scheme-inverse",
+            "card_link": "",
+            "image_overlay_opacity": 20,
+            "content_position": "split-bottom-button",
+            "content_alignment": "left",
+            "subheading": "Promotion",
+            "subheading_style": "",
+            "heading": "Soft Stools Design",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "Shop now",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "collection_ydJPzX",
+        "collection_E83rKg"
+      ],
+      "custom_css": [],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "New and popular",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "<p>Traditional divides between personal and professional space.</p>",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "limit": 7,
+        "columns": 5,
+        "column_gap": "medium",
+        "row_gap": "large",
+        "enable_slider": true,
+        "content_overflow": true,
+        "navigation_position": "middle",
+        "pcard_image_ratio": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_progress_bar": true,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "promotion_banner_VCkmzP": {
+      "type": "promotion-banner",
+      "blocks": {
+        "subheading_xKzbww": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Flash Sale now on!",
+            "subheading_icon": "none"
+          }
+        },
+        "timer_6FyFrY": {
+          "type": "timer",
+          "settings": {
+            "type": "evergreen",
+            "number_size": "h1",
+            "duration": "every_month",
+            "time": "2025/06/28 03:45 PM"
+          }
+        },
+        "text_QWap4d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Save on modern table office, <br/>best sellers + more</p>",
+            "text_color": "base-text"
+          }
+        },
+        "code_FWe4HN": {
+          "type": "code",
+          "settings": {
+            "discount_code": "HELLO",
+            "button_label": "Use Code: HELLO",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xKzbww",
+        "timer_6FyFrY",
+        "text_QWap4d",
+        "code_FWe4HN"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-8",
+        "layout": "horizontal",
+        "content_alignment": "center",
+        "content_alignment_mobile": "center",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "custom_content_HPgFTK": {
+      "type": "custom-content",
+      "blocks": {
+        "image_card_with_product_qBJGcT": {
+          "type": "image_card_with_product",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "subheading": "Danish Design",
+            "heading": "Material Natural",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "description": "",
+            "button_label": "Shop",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "product": "",
+            "width": "25%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_card_with_product_G77z3R": {
+          "type": "image_card_with_product",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "subheading": "Cotton Collection",
+            "heading": "Authority Design",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "description": "",
+            "button_label": "Shop",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "product": "",
+            "width": "25%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_card_with_product_3khACH": {
+          "type": "image_card_with_product",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "subheading": "Minimalism Style",
+            "heading": "Steels Lighting",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "description": "",
+            "button_label": "Shop",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "product": "",
+            "width": "25%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        },
+        "image_card_with_product_dMnGc4": {
+          "type": "image_card_with_product",
+          "settings": {
+            "color_scheme": "scheme-inverse",
+            "image_ratio": "adapt",
+            "subheading": "Danish Design",
+            "heading": "Nightstand",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3",
+            "description": "",
+            "button_label": "Shop",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "product": "",
+            "width": "25%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_card_with_product_qBJGcT",
+        "image_card_with_product_G77z3R",
+        "image_card_with_product_3khACH",
+        "image_card_with_product_dMnGc4"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "enable_sticky_column": false,
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "column_gap": "2xs",
+        "row_gap": "large",
+        "swipe_on_mobile": true,
+        "columns_mobile": "1",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "collection_list_Azm9te": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_KdFqFq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Sale Items"
+          }
+        },
+        "featured_collection_d8XGnb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Press Tables"
+          }
+        },
+        "featured_collection_FzRWDn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Lighting"
+          }
+        },
+        "featured_collection_at4gCr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Spoke Sofa"
+          }
+        },
+        "featured_collection_F69pQy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Storage"
+          }
+        },
+        "featured_collection_JV9tDT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Turn Chairs"
+          }
+        },
+        "featured_collection_WLrpbE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Longe Chairs"
+          }
+        },
+        "featured_collection_qdrbEr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Curve Coat"
+          }
+        },
+        "featured_collection_Pa8kFP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Cross Tables"
+          }
+        },
+        "featured_collection_UTWiiY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Bend Chairs"
+          }
+        },
+        "featured_collection_rkynNN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Bar Chairs"
+          }
+        },
+        "featured_collection_8t9tJr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Accessories"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_KdFqFq",
+        "featured_collection_d8XGnb",
+        "featured_collection_FzRWDn",
+        "featured_collection_at4gCr",
+        "featured_collection_F69pQy",
+        "featured_collection_JV9tDT",
+        "featured_collection_WLrpbE",
+        "featured_collection_qdrbEr",
+        "featured_collection_Pa8kFP",
+        "featured_collection_UTWiiY",
+        "featured_collection_rkynNN",
+        "featured_collection_8t9tJr"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Shop By Categories",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "Shop All Products",
+        "button_link": "",
+        "button_style": "btn--plain",
+        "button_icon": "caret-right",
+        "card_color_scheme": "",
+        "card_style": "standard",
+        "card_heading_size": "text-base",
+        "card_image_ratio": "adapt",
+        "card_image_width": "large",
+        "rounded_card_image": true,
+        "card_show_border": false,
+        "columns_desktop": 6,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "grid_bordered": true,
+        "columns_mobile": "3",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "collection_tabs_VexkkR": {
+      "type": "collection-tabs",
+      "blocks": {
+        "collection_kXyTe3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "Heritage Living",
+            "text": "<p>With a shape inspired by the bollards used to<br/>secure vessels to a jetty</p>",
+            "button_label": "Shop Collection",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        },
+        "collection_qxfNFe": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "The Haven Collection",
+            "text": "<p>Anchored in design, inspired by the sturdy bollards<br/>that secure ships to docks.</p>",
+            "button_label": "Shop Collection",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        },
+        "collection_j3wCpz": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "Solace Series",
+            "text": "<p>Designed with a silhouette inspired by the crossbars <br/>that provide strength and stability.</p>",
+            "button_label": "Shop Collection",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "collection_kXyTe3",
+        "collection_qxfNFe",
+        "collection_j3wCpz"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 1024px) {collection-tabs {padding-inline: 5rem; }}"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "heading": "Featured Collections",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h6",
+        "image_position": "right",
+        "image_ratio": "adapt",
+        "collection_heading_size": "h1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "favorite_products_6Tg9Pn": {
+      "type": "favorite-products",
+      "blocks": {
+        "product_XrLWzM": {
+          "type": "product",
+          "settings": {
+            "color_scheme": "scheme-7",
+            "product": "",
+            "text": "<p>“All products are authentic and imported from the country of origin.”</p>",
+            "text_size": "h2",
+            "author": "Jenny Wilson",
+            "bio": "New Mexico"
+          }
+        },
+        "product_wByADN": {
+          "type": "product",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "product": "",
+            "text": "<p>“Each piece is authentic and carefully sourced from its place of origin.”</p>",
+            "text_size": "h2",
+            "author": "Julie Mathers",
+            "bio": "Australia"
+          }
+        },
+        "product_8UUtBe": {
+          "type": "product",
+          "settings": {
+            "color_scheme": "scheme-6",
+            "product": "",
+            "text": "<p>“Crafted with care using local materials, each piece reflects the character of its origin.”</p>",
+            "text_size": "h2",
+            "author": "John Doe",
+            "bio": "New York"
+          }
+        }
+      },
+      "block_order": [
+        "product_XrLWzM",
+        "product_wByADN",
+        "product_8UUtBe"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".testimonial__content {max-width: 46rem;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": "content-right",
+        "heading": "Our Favorite Products",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "slide_height": "small",
+        "pcard_style": "boxed",
+        "pcard_image_ratio": "",
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "lookbook_slider_9zCdQJ": {
+      "type": "lookbook-slider",
+      "blocks": {
+        "lookbook_card_8cicAx": {
+          "type": "lookbook_card",
+          "settings": {
+            "product_list": [],
+            "width": 59,
+            "width_mobile": 90,
+            "heading": "Shop this look",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6"
+          }
+        },
+        "lookbook_card_eUB7yN": {
+          "type": "lookbook_card",
+          "settings": {
+            "product_list": [],
+            "width": 29,
+            "width_mobile": 65,
+            "heading": "Shop this look",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6"
+          }
+        },
+        "lookbook_card_tHgUQt": {
+          "type": "lookbook_card",
+          "settings": {
+            "product_list": [],
+            "width": 59,
+            "width_mobile": 90,
+            "heading": "Shop this look",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6"
+          }
+        },
+        "lookbook_card_8BaXc6": {
+          "type": "lookbook_card",
+          "settings": {
+            "product_list": [],
+            "width": 29,
+            "width_mobile": 65,
+            "heading": "Shop this look",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6"
+          }
+        },
+        "lookbook_card_DtRhzC": {
+          "type": "lookbook_card",
+          "settings": {
+            "product_list": [],
+            "width": 59,
+            "width_mobile": 90,
+            "heading": "Shop this look",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h6"
+          }
+        }
+      },
+      "block_order": [
+        "lookbook_card_8cicAx",
+        "lookbook_card_eUB7yN",
+        "lookbook_card_tHgUQt",
+        "lookbook_card_8BaXc6",
+        "lookbook_card_DtRhzC"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Get Inspired by Spaces",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "",
+        "description_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "button_icon": "none",
+        "column_gap": "2xs",
+        "enable_slider": true,
+        "slide_height": "medium",
+        "enable_swiper_mobile": true,
+        "show_progress_bar": true,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "custom_content_JxRy7x": {
+      "type": "custom-content",
+      "blocks": {
+        "image_card_mL7WWJ": {
+          "type": "image_card",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "image_ratio": "adapt",
+            "image_overlay_opacity": 0,
+            "content_position": "split-bottom-button",
+            "content_alignment": "left",
+            "content_spacing": "small",
+            "content_gap": "fitted",
+            "card_link": "",
+            "subheading": "",
+            "subheading_style": "",
+            "heading": "Turn Chairs",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "<p>Elevate your space with 40% off<br/>our timeless designs!</p>",
+            "button_label": "Shop Now",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "show_badge": true,
+            "badge_color_scheme": "scheme-3",
+            "badge_shape": "circle",
+            "badge_position": "top-right",
+            "badge_subtext": "Save",
+            "badge_text": "40%",
+            "color_scheme_mobile": "scheme-1",
+            "show_text_below": false,
+            "content_alignment_mobile": "left",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": "",
+            "enable_preload_image": false
+          }
+        },
+        "image_card_Vj69GM": {
+          "type": "image_card",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "image_ratio": "adapt",
+            "image_overlay_opacity": 0,
+            "content_position": "split-bottom-button",
+            "content_alignment": "left",
+            "content_spacing": "small",
+            "content_gap": "fitted",
+            "card_link": "",
+            "subheading": "",
+            "subheading_style": "",
+            "heading": "Cross Chairs",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "<p>Get 30% off elegant, timeless <br/>seating—don’t miss out!</p>",
+            "button_label": "Shop Now",
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "show_badge": true,
+            "badge_color_scheme": "scheme-8",
+            "badge_shape": "circle",
+            "badge_position": "top-right",
+            "badge_subtext": "Save",
+            "badge_text": "30%",
+            "color_scheme_mobile": "scheme-1",
+            "show_text_below": false,
+            "content_alignment_mobile": "left",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": "",
+            "enable_preload_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_card_mL7WWJ",
+        "image_card_Vj69GM"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "enable_sticky_column": false,
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "column_gap": "2xs",
+        "row_gap": "inherit",
+        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "buttons_with_icon_7zH9F3": {
+      "type": "buttons-with-icon",
+      "blocks": {
+        "button_item_VQE7f9": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Living Room",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_A8ctbq": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Planters",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_gp6wzj": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Gravel Rug",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_KjqtJi": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Table Mirror",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_Q3cegW": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Table Wears",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_pqRX7H": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Dining Decor",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_en8WtA": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Ray Table Lamp",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_JnFWN8": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Chairs",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_FrFqff": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Living Room",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_mKVJW4": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Planters",
+            "button_link": "",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "button_item_VQE7f9",
+        "button_item_A8ctbq",
+        "button_item_gp6wzj",
+        "button_item_KjqtJi",
+        "button_item_Q3cegW",
+        "button_item_pqRX7H",
+        "button_item_en8WtA",
+        "button_item_JnFWN8",
+        "button_item_FrFqff",
+        "button_item_mKVJW4"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "item_alignment": "left",
+        "item_button_style": "btn--icon",
+        "item_button_font": "button",
+        "enable_slider": true,
+        "swipe_on_mobile": true,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_RWUfH9": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_tqdqYc": {
+          "type": "collection",
+          "settings": {
+            "collection": "offers",
+            "title": "",
+            "show_banner": false,
+            "color_scheme": "",
+            "card_link": "",
+            "image_overlay_opacity": 0,
+            "content_position": "top-left",
+            "content_alignment": "left",
+            "subheading": "",
+            "subheading_style": "",
+            "heading": "Collections",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "collection_tqdqYc"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-1",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Now on offer",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "<p>Traditional divides between personal and professional space.</p>",
+        "text_size": "text-base",
+        "button_label": "View All",
+        "button_link": "shopify://collections/all",
+        "button_style": "btn--plain",
+        "button_icon": "arrow-right",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "enable_slider": true,
+        "content_overflow": true,
+        "navigation_position": "middle",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_progress_bar": true,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "collection_cards_DECVyp": {
+      "type": "collection-cards",
+      "blocks": {
+        "collection_hV4hhx": {
+          "type": "collection",
+          "settings": {
+            "collection": "beauty",
+            "title": ""
+          }
+        },
+        "collection_cPzChj": {
+          "type": "collection",
+          "settings": {
+            "collection": "cooking-and-dining",
+            "title": ""
+          }
+        },
+        "collection_CqXEnn": {
+          "type": "collection",
+          "settings": {
+            "collection": "kids-plush",
+            "title": ""
+          }
+        },
+        "collection_t8tKRe": {
+          "type": "collection",
+          "settings": {
+            "collection": "men",
+            "title": ""
+          }
+        },
+        "collection_rqnnag": {
+          "type": "collection",
+          "settings": {
+            "collection": "women",
+            "title": ""
+          }
+        },
+        "collection_HEaLqe": {
+          "type": "collection",
+          "settings": {
+            "collection": "living-and-sleeping",
+            "title": ""
+          }
+        },
+        "collection_DVWiDU": {
+          "type": "collection",
+          "settings": {
+            "collection": "travel",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_hV4hhx",
+        "collection_cPzChj",
+        "collection_CqXEnn",
+        "collection_t8tKRe",
+        "collection_rqnnag",
+        "collection_HEaLqe",
+        "collection_DVWiDU"
+      ],
+      "name": "t:sections.collection-cards.presets",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "New and popular",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "",
+        "text_size": "text-sm",
+        "columns_desktop": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "enable_slider": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "card_color_scheme": "",
+        "image_ratio": "3/4",
+        "show_product_count": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "image_with_text_aXhRxw": {
+      "type": "image-with-text",
+      "blocks": {
+        "badge_fQjMHW": {
+          "type": "badge",
+          "settings": {
+            "color_scheme": "scheme-3",
+            "text": "garace - where design meet function -",
+            "position_mobile": "right"
+          }
+        },
+        "subheading_8kBXjM": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Meet Our Team"
+          }
+        },
+        "heading_jnb9cP": {
+          "type": "heading",
+          "settings": {
+            "heading": "The creative minds behind our studio",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_4pYVYF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As designers we are constantly thinking about how people live and what problems we could solve for them. </p>",
+            "subtext_color": true
+          }
+        },
+        "icon_with_text_8qCJiV": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "map-pin",
+            "icon_width": 24,
+            "color": "#000000",
+            "heading": "Product locally in New York",
+            "heading_size": "h5",
+            "text": "",
+            "vertical_alignment": "start"
+          }
+        },
+        "icon_with_text_w4D3R6": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "smiley",
+            "icon_width": 24,
+            "color": "#000000",
+            "heading": "4,8 Review Score",
+            "heading_size": "h5",
+            "text": "",
+            "vertical_alignment": "start"
+          }
+        },
+        "icon_with_text_pcaqTj": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "stool",
+            "icon_width": 24,
+            "color": "#000000",
+            "heading": "Over 50 Products",
+            "heading_size": "h5",
+            "text": "",
+            "vertical_alignment": "start"
+          }
+        },
+        "button_aegkDr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "badge_fQjMHW",
+        "subheading_8kBXjM",
+        "heading_jnb9cP",
+        "text_4pYVYF",
+        "icon_with_text_8qCJiV",
+        "icon_with_text_w4D3R6",
+        "icon_with_text_pcaqTj",
+        "button_aegkDr"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text__content {max-width: 45rem; --text-margin-top: 2rem;}",
+        "@media (min-width: 1280px) {.image-with-text__media {padding-inline-start: 5rem; }}"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "image_position": "left",
+        "image_width": 50,
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "inherit",
+        "show_section_divider": false,
+        "divider_width": "fixed",
         "padding_top": 60,
         "padding_bottom": 60
       }
     },
-    "sa_reversable_banner_inUbi4": {
-      "type": "sa-reversable-banner",
-      "name": "SA Reversable Banner",
-      "settings": {
-        "image": "shopify://shop_images/Vector_2.png",
-        "title": "Fuel Organizationaland Employee Growthwith Skillsoft",
-        "description": "<p>Skillsoft helps organizations develop their workforce through AI-powered learning, hands-on practice, and real-time insights—driving continuous growth and skill readiness.</p>",
-        "button_text": "Explore Our Platform",
-        "button_link": "#",
-        "reverse_layout": true,
-        "padding_top": 60,
-        "padding_bottom": 120
-      }
-    },
-    "nxt_talented_section_wzqaaK": {
-      "type": "nxt-talented-section",
+    "testimonials_mLThk7": {
+      "type": "testimonials",
       "blocks": {
-        "talented_j43gG6": {
-          "type": "talented",
+        "testimonial_EtxFFg": {
+          "type": "testimonial",
           "settings": {
-            "image_style": "style-1",
-            "image": "shopify://shop_images/talented-1.webp",
-            "title": "Elevate Talent Growth",
-            "description": "Build a workforce equipped to lead teams, implement",
-            "button_text": "Explore Solutions",
-            "button_link": "shopify://collections/all"
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>“The products are artful, fun, have a story just as unique as the designers who made it.”</p>",
+            "author": "Jenny Wilson",
+            "bio": "New Mexico",
+            "product": ""
           }
         },
-        "talented_fgzyry": {
-          "type": "talented",
+        "testimonial_QPUyLy": {
+          "type": "testimonial",
           "settings": {
-            "image_style": "style-2",
-            "image": "shopify://shop_images/talented-2.webp",
-            "title": "Future-Proof Your Workforce",
-            "description": "Equip your talent to adapt to evolving business demands",
-            "button_text": "Start Your Journey",
-            "button_link": "shopify://collections/all"
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>“The best coat I have found.Great colors and materials for life style.”</p>",
+            "author": "Samantha Taylor",
+            "bio": "Portland, Oregon",
+            "product": ""
           }
         },
-        "talented_6yiHxA": {
-          "type": "talented",
+        "testimonial_iTzQDb": {
+          "type": "testimonial",
           "settings": {
-            "image_style": "style-1",
-            "image": "shopify://shop_images/talented-1.webp",
-            "title": "Embrace an Ethical Culture",
-            "description": "Provide essential training for your employees to",
-            "button_text": "Learn How",
-            "button_link": "shopify://collections/all"
-          }
-        },
-        "talented_C3XJDf": {
-          "type": "talented",
-          "settings": {
-            "image_style": "style-2",
-            "image": "shopify://shop_images/talented-2.webp",
-            "title": "Unlock Your Career Potential",
-            "description": "Develop mission-critical skills for growth with",
-            "button_text": "Learn More",
-            "button_link": "shopify://collections/all"
+            "icon": "none",
+            "heading": "Testimonials",
+            "text": "<p>“Every item feels like a masterpiece, blending creativity and authenticity beautifully.”</p>",
+            "author": "David Martinez",
+            "bio": "Austin, Texas",
+            "product": ""
           }
         }
       },
       "block_order": [
-        "talented_j43gG6",
-        "talented_fgzyry",
-        "talented_6yiHxA",
-        "talented_C3XJDf"
+        "testimonial_EtxFFg",
+        "testimonial_QPUyLy",
+        "testimonial_iTzQDb"
       ],
-      "name": "SA Talented Section",
+      "disabled": true,
+      "custom_css": [
+        ".testimonial__inner {max-width: 64rem; margin-left: auto; margin-right: auto;}"
+      ],
       "settings": {
-        "title": "Accelerate Your Talent Transformation At Scale",
-        "description": "Drive Growth Across Your Workforce with Interactive, Measurable Learning Experiences that Empower Your Employees",
+        "container": "full",
+        "color_scheme": "scheme-3",
+        "section_header_alignment": "center",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "What Clients Talk About Us",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h6",
+        "description": "",
+        "text_size": "text-base",
+        "layout": "focused",
+        "card_color_scheme": "scheme-3",
+        "card_content_color_scheme": "",
+        "card_image_ratio": "adapt",
+        "card_heading_size": "h4",
+        "card_text_size": "h2",
+        "author_info_layout": "vertical",
+        "card_trigger_behavior": "click",
+        "show_image": false,
+        "show_author_image": false,
+        "columns_desktop": 2,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_slider": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_progress_bar": true,
         "padding_top": 60,
-        "padding_bottom": 130,
-        "background_color": "#3b132a"
+        "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "fixed"
       }
     },
-    "nxt_image_box_section_6bdnaH": {
-      "type": "nxt-imageBox-section",
+    "slider_with_multicolumn_aJwbrc": {
+      "type": "slider-with-multicolumn",
       "blocks": {
-        "image_box_78MkR6": {
-          "type": "imageBox",
+        "slide_wNd9Jh": {
+          "type": "slide",
           "settings": {
-            "icon": "<svg width=\"54\" height=\"54\" viewbox=\"0 0 54 54\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.86928 19.8941L10.6186 22.1773L14.1921 17.553M18.1624 20.3288H29.6394M8.86928 27.195L10.6186 29.4781L14.1921 24.8538M18.1624 27.6296H27.0438M8.81731 34.4439L10.5666 36.727L14.1401 32.1034M18.1104 34.8792H29.5874M8.17078 10.4431H19.6478M28.5839 25.5672C29.8209 25.0556 31.1828 25.6097 31.7092 26.7536L34.3959 32.5873C34.6402 32.017 35.112 31.5297 35.7457 31.2672C36.8734 30.8015 38.1402 31.2031 38.7212 32.1587C38.9102 31.4569 39.4319 30.8346 40.1797 30.5255H40.1803C41.3074 30.0605 42.5741 30.4614 43.1552 31.4164C43.3442 30.7152 43.8652 30.0929 44.6136 29.7832C45.8507 29.2723 47.3233 29.7805 47.739 30.9696L50.7948 39.7167C53.2791 46.8286 44.4112 54.3285 37.7676 50.0296L26.2441 42.5735C25.1663 41.8763 24.9186 40.4361 25.694 39.3739C26.921 38.8677 29.3472 38.8947 30.433 39.5973L32.6156 41.0091L27.2112 28.6122C26.7084 27.4582 27.3468 26.0787 28.5839 25.5679V25.5672Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M24.6142 2.69946H4.47513C3.5384 2.69946 2.76768 3.47018 2.76768 4.40691V45.8634C2.76768 46.8002 3.5357 47.5709 4.47513 47.5709H34.0335M35.741 30.435V13.8249\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M35.741 13.8249H26.3217C25.3822 13.8249 24.6142 13.0575 24.6142 12.1174V2.69946L35.7403 13.8249H35.741Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
-            "title": "Bridge Skills Gaps",
-            "description": "Empowers organizations to upskill and reskill their workforce in alignment with market demands."
+            "color_scheme": "scheme-inverse",
+            "image_overlay_opacity": 20,
+            "content_position": "top-left",
+            "content_alignment": "left",
+            "subheading": "Hot Deals",
+            "heading": "The Bow Chairs Under $200",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h1",
+            "text": "<p>Introducing the latest styles in women's shoes tailored for every occasion taste.</p>",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
           }
         },
-        "image_box_PEEUM8": {
-          "type": "imageBox",
+        "slide_cGYakP": {
+          "type": "slide",
           "settings": {
-            "icon": "<svg width=\"52\" height=\"45\" viewbox=\"0 0 52 45\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_41_943)\">\n<path d=\"M0.35614 44.6404H51.6438M3.14063 29.9417H9.9968V44.5406H3.14063V29.9417ZM16.095 16.9041H22.9512V44.5406H16.095V16.9041ZM29.0487 28.5447H35.9049V44.5406H29.0487V28.5447ZM42.0032 22.4918H48.8593V44.5406H42.0032V22.4918Z\" stroke=\"#FF319F\" stroke-width=\"0.861233\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M6.56923 13.6162C4.38523 13.6162 2.61438 15.4008 2.61438 17.601C2.61438 19.8012 4.38523 21.5865 6.56923 21.5865C8.75323 21.5865 10.5241 19.8019 10.5241 17.601C10.5241 15.4 8.75323 13.6162 6.56923 13.6162ZM19.5229 0.359619C17.3396 0.359619 15.5681 2.1442 15.5681 4.34441C15.5681 6.54463 17.3389 8.32992 19.5229 8.32992C21.7069 8.32992 23.4778 6.54534 23.4778 4.34441C23.4778 2.14348 21.7069 0.359619 19.5229 0.359619ZM32.4766 12.2164C30.2933 12.2164 28.5218 14.0002 28.5218 16.2012C28.5218 18.4021 30.2926 20.1867 32.4766 20.1867C34.6606 20.1867 36.4315 18.4021 36.4315 16.2012C36.4315 14.0002 34.6606 12.2164 32.4766 12.2164ZM45.431 6.18714C43.247 6.18714 41.4762 7.97172 41.4762 10.1719C41.4762 12.3721 43.247 14.1574 45.431 14.1574C47.615 14.1574 49.3859 12.3729 49.3859 10.1719C49.3859 7.971 47.615 6.18714 45.431 6.18714Z\" stroke=\"#FF319F\" stroke-width=\"0.861233\" stroke-miterlimit=\"22.93\"></path>\n<path d=\"M10.1065 13.9809L16.2197 7.90211M23.093 7.60205L29.2632 13.2932M36.3708 14.5028L41.0201 12.225\" stroke=\"#FF319F\" stroke-width=\"0.861233\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_41_943\">\n<rect width=\"52\" height=\"45\" fill=\"white\"></rect>\n</clippath>\n</defs>\n</svg>",
-            "title": "Improve Talent Retention",
-            "description": "Cultivates a culture of continuous learning and engagement to retain top talent."
+            "color_scheme": "scheme-inverse",
+            "image_overlay_opacity": 20,
+            "content_position": "top-left",
+            "content_alignment": "left",
+            "subheading": "Dining & Kitchen",
+            "heading": "Difference in the Details",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h1",
+            "text": "<p>Highlighting the unique touches that set every piece apart, crafted to elevate your style effortlessly.</p>",
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
           }
         },
-        "image_box_PHwpJy": {
-          "type": "imageBox",
+        "image_card_BXpdq6": {
+          "type": "image-card",
           "settings": {
-            "icon": "<svg width=\"54\" height=\"54\" viewbox=\"0 0 54 54\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M46.6322 26.9978L30.1806 26.9924M28.7735 24.5183C30.1415 25.5002 30.4546 27.4047 29.472 28.7734C28.4894 30.1414 26.5856 30.4545 25.2169 29.4726C23.8489 28.4906 23.5358 26.5861 24.5177 25.2174C25.4997 23.8495 27.4042 23.5363 28.7728 24.5183H28.7735Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M23.882 26.9945L18.076 26.9911M26.9952 2.69946C40.4138 2.69946 51.2909 13.5765 51.2909 26.9951C51.2909 40.4138 40.4138 51.2908 26.9952 51.2908C13.5766 51.2908 2.69952 40.4138 2.69952 26.9951C2.69952 13.5765 13.5766 2.69946 26.9952 2.69946Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M13.3019 39.4758C10.2987 36.1831 8.46771 31.8024 8.46771 26.9953C8.46771 16.7627 16.7627 8.46777 26.9952 8.46777C35.8017 8.46777 43.1734 14.6119 45.057 22.8468\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M15.4703 20.1918C17.7986 16.2546 22.0895 13.6138 26.9952 13.6138C33.005 13.6138 38.0902 17.576 39.7795 23.0304\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M26.9952 18.761C30.0666 18.761 32.7445 20.4428 34.1604 22.9344M46.6322 26.9979L45.1515 26.9925M46.0484 31.7484L44.613 31.3846M44.3322 36.2168L43.0277 35.5162M41.5861 40.1365L40.4901 39.1417M21.4349 41.5807H32.5562C33.167 41.5807 33.6671 42.0801 33.6671 42.6922V44.5077C33.6671 45.1198 33.167 45.6192 32.5562 45.6192H21.4349C20.8228 45.6192 20.3234 45.1191 20.3234 44.5077V42.6922C20.3234 42.0801 20.8234 41.5807 21.4349 41.5807Z\" stroke=\"#FF319F\" stroke-width=\"0.674875\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
-            "title": "Drive Digital Transformation",
-            "description": "Equip teams with the skills to adapt to new technologies and lead innovation."
+            "color_scheme": "",
+            "content_alignment": "center",
+            "heading": "Select Table Lamps",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h5",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "text": "<p>Get up to $100 Off</p>",
+            "card_link": ""
           }
         },
-        "image_box_DgX7d6": {
-          "type": "imageBox",
+        "image_card_yb3htw": {
+          "type": "image-card",
           "settings": {
-            "icon": "<svg width=\"57\" height=\"54\" viewbox=\"0 0 57 54\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M53.5246 29.1298C54.6904 29.1298 55.6354 28.1848 55.6354 27.019C55.6354 25.8532 54.6904 24.9082 53.5246 24.9082C52.3588 24.9082 51.4138 25.8532 51.4138 27.019C51.4138 28.1848 52.3588 29.1298 53.5246 29.1298Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M35.2113 29.1298C36.377 29.1298 37.322 28.1848 37.322 27.019C37.322 25.8532 36.377 24.9082 35.2113 24.9082C34.0455 24.9082 33.1005 25.8532 33.1005 27.019C33.1005 28.1848 34.0455 29.1298 35.2113 29.1298Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M49.3024 38.2233C50.4682 38.2233 51.4132 37.2783 51.4132 36.1125C51.4132 34.9467 50.4682 34.0017 49.3024 34.0017C48.1367 34.0017 47.1917 34.9467 47.1917 36.1125C47.1917 37.2783 48.1367 38.2233 49.3024 38.2233Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M41.0805 50.4481C42.2463 50.4481 43.1913 49.5031 43.1913 48.3374C43.1913 47.1716 42.2463 46.2266 41.0805 46.2266C39.9148 46.2266 38.9697 47.1716 38.9697 48.3374C38.9697 49.5031 39.9148 50.4481 41.0805 50.4481Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M39.4607 49.915L35.7877 53.588H28.0729\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M48.024 37.791L43.9185 41.8965H32.2256\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M37.3218 27.0188H51.4147\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M42.922 22.2113C43.7463 21.387 43.7463 20.0505 42.922 19.2262C42.0977 18.4019 40.7612 18.4019 39.9369 19.2262C39.1126 20.0505 39.1126 21.387 39.9369 22.2113C40.7612 23.0356 42.0977 23.0356 42.922 22.2113Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M49.3024 19.9857C50.4682 19.9857 51.4132 19.0407 51.4132 17.875C51.4132 16.7092 50.4682 15.7642 49.3024 15.7642C48.1367 15.7642 47.1917 16.7092 47.1917 17.875C47.1917 19.0407 48.1367 19.9857 49.3024 19.9857Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M39.6733 18.8728L36.9965 16.196H32.2256\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M42.9215 34.472C43.7458 33.6477 43.7458 32.3113 42.9215 31.4869C42.0972 30.6626 40.7607 30.6626 39.9364 31.4869C39.1121 32.3113 39.1121 33.6477 39.9364 34.472C40.7607 35.2964 42.0972 35.2964 42.9215 34.472Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M39.6733 34.8245L36.9965 37.5012H32.2256\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M42.573 7.14222C43.3973 6.3179 43.3973 4.98142 42.573 4.1571C41.7487 3.33279 40.4122 3.33279 39.5879 4.1571C38.7636 4.98142 38.7636 6.3179 39.5879 7.14221C40.4122 7.96653 41.7487 7.96653 42.573 7.14222Z\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M39.4607 4.07217L35.7877 0.39917H28.0729\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M48.024 16.196L43.9185 12.0906H32.2256\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\"></path>\n<path d=\"M19.6523 13.8733C15.9315 13.8733 12.9153 10.8571 12.9153 7.13623C12.9153 3.4154 15.9315 0.39917 19.6523 0.39917C23.3732 0.39917 26.3894 3.4154 26.3894 7.13623V46.8509C26.3894 50.5717 23.3732 53.5879 19.6523 53.5879C15.9315 53.5879 12.9153 50.5717 12.9153 46.8509C12.9153 44.7047 13.9194 42.7927 15.4831 41.5585\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M6.15776 15.7662C5.87323 15.0197 5.71716 14.2103 5.71716 13.3637C5.71716 9.64265 8.73359 6.62622 12.4547 6.62622C12.6099 6.62622 12.7636 6.63174 12.9158 6.64198\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M3.26702 27.9518C1.52983 26.7333 0.394043 24.7155 0.394043 22.4321C0.394043 18.711 3.41047 15.6946 7.13155 15.6946C8.75208 15.6946 10.2386 16.2668 11.4012 17.2197\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M5.76553 37.8077C3.5704 36.6971 2.06494 34.42 2.06494 31.7922C2.06494 28.0711 5.08137 25.0547 8.80245 25.0547\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M12.9103 46.8027C12.6439 46.8351 12.372 46.8516 12.0969 46.8516C8.3758 46.8516 5.35938 43.8352 5.35938 40.1141C5.35938 37.6431 6.68985 35.4827 8.67374 34.3098\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M10.4927 27.3534C8.99827 25.6604 8.41264 23.2745 9.06842 21.0171\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M20.4973 46.3263C19.0029 44.6333 18.4173 42.2474 19.0731 39.99\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M15.8558 27.8115C19.2246 28.5556 21.4434 31.7005 21.1092 35.0503\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M22.1015 19.0789C21.638 21.4025 19.5091 22.9702 17.2036 22.7881\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M19.0052 3.71655C21.0624 4.89333 21.8743 7.40926 20.9702 9.53739\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M16.7662 18.6979C14.8824 17.2602 14.4095 14.6592 15.5863 12.6682\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M18.7644 29.187C18.301 31.5106 16.1721 33.0783 13.8666 32.8963\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M19.7343 9.27905C20.8842 9.4698 21.864 10.0688 22.5505 10.9035\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M17.5968 48.5525C18.7468 48.7432 19.7265 49.3423 20.413 50.177\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n<path d=\"M18.4618 42.5825C16.0917 42.5825 14.1385 40.8011 13.8666 38.5051\" stroke=\"#FF319F\" stroke-width=\"0.788145\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"></path>\n</svg>",
-            "title": "Future-Proof the Workforce",
-            "description": "Enabling ability and resilience in an era of constant change."
+            "color_scheme": "",
+            "content_alignment": "center",
+            "heading": "Select Lounge Chairs",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h5",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "text": "<p>From $200</p>",
+            "card_link": ""
+          }
+        },
+        "image_card_7KqpyL": {
+          "type": "image-card",
+          "settings": {
+            "color_scheme": "",
+            "content_alignment": "center",
+            "heading": "Select Side tables",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h5",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "text": "<p>Get up to $1.000</p>",
+            "card_link": ""
+          }
+        },
+        "image_card_ag7Eb3": {
+          "type": "image-card",
+          "settings": {
+            "color_scheme": "",
+            "content_alignment": "center",
+            "heading": "Select Home Decors",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h5",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "text": "<p>Buy One Get One</p>",
+            "card_link": ""
           }
         }
       },
       "block_order": [
-        "image_box_78MkR6",
-        "image_box_PEEUM8",
-        "image_box_PHwpJy",
-        "image_box_DgX7d6"
+        "slide_wNd9Jh",
+        "slide_cGYakP",
+        "image_card_BXpdq6",
+        "image_card_yb3htw",
+        "image_card_7KqpyL",
+        "image_card_ag7Eb3"
       ],
-      "name": "SA Image Box Section",
+      "disabled": true,
+      "custom_css": [
+        ".slide__text {max-width: 37rem; --text-margin-top: 2rem;}"
+      ],
       "settings": {
-        "title": "Accelerate Your Talent Transformation At Scale",
-        "description": "Drive Growth Across Your Workforce with Interactive, Measurable Learning Experiences that Empower Your Employees",
-        "padding_top": 66,
-        "padding_bottom": 56,
-        "background_color": "#f3efda"
+        "container": "fixed",
+        "color_scheme": "scheme-1",
+        "autoplay": true,
+        "autoplay_delay": 6,
+        "columns_desktop": 2,
+        "column_gap": "2xs",
+        "row_gap": "inherit",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "scrolling_promotion_9Hng8m": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "text_m9JnRY": {
+          "type": "text",
+          "settings": {
+            "text_link": "",
+            "text": "Lounge Chairs",
+            "text_size": "h2",
+            "text_opacity": 100,
+            "use_custom_color": true,
+            "custom_color": "#1d349a"
+          }
+        },
+        "image_pmGhNr": {
+          "type": "image",
+          "settings": {
+            "image_height": 72,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 60
+          }
+        },
+        "text_gENJV7": {
+          "type": "text",
+          "settings": {
+            "text_link": "",
+            "text": "Bow Chairs",
+            "text_size": "h2",
+            "text_opacity": 100,
+            "use_custom_color": true,
+            "custom_color": "#1d349a"
+          }
+        },
+        "image_KBetgG": {
+          "type": "image",
+          "settings": {
+            "image_height": 72,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 60
+          }
+        },
+        "text_ETiRz6": {
+          "type": "text",
+          "settings": {
+            "text_link": "",
+            "text": "Cross Chair",
+            "text_size": "h2",
+            "text_opacity": 100,
+            "use_custom_color": true,
+            "custom_color": "#1d349a"
+          }
+        },
+        "image_ypAQyf": {
+          "type": "image",
+          "settings": {
+            "image_height": 72,
+            "image_rounded": false,
+            "image_link": "",
+            "image_height_mobile": 60
+          }
+        }
+      },
+      "block_order": [
+        "text_m9JnRY",
+        "image_pmGhNr",
+        "text_gENJV7",
+        "image_KBetgG",
+        "text_ETiRz6",
+        "image_ypAQyf"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "direction": "left",
+        "pause_on_hover": true,
+        "speed": 0.3,
+        "h_spacing": 16,
+        "show_section_divider": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "buttons_with_icon_c8CzHV": {
+      "type": "buttons-with-icon",
+      "blocks": {
+        "button_item_TXLwjF": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "All eco-certified",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_tpCdia": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Product protection",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_wKgxpM": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Make it yours",
+            "button_link": "",
+            "icon": "check"
+          }
+        },
+        "button_item_Ngk44m": {
+          "type": "button_item",
+          "settings": {
+            "button_label": "Unique tailored",
+            "button_link": "",
+            "icon": "check"
+          }
+        }
+      },
+      "block_order": [
+        "button_item_TXLwjF",
+        "button_item_tpCdia",
+        "button_item_wKgxpM",
+        "button_item_Ngk44m"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".section__header {--header-padding-bottom: 2.4rem;}",
+        ".section__heading {max-width: 45rem;}"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-9",
+        "section_header_alignment": "center",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "This approach resulted in the beautiful structure",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "item_alignment": "center",
+        "item_button_style": "btn--primary",
+        "item_button_font": "button",
+        "enable_slider": true,
+        "swipe_on_mobile": true,
+        "show_section_divider": true,
+        "divider_width": "full",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_Ff4Wbj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YWTLnF": {
+          "type": "column",
+          "settings": {
+            "title": "Comfortable",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h4",
+            "text": "<p>Bow Chair is available in Natural or Black-stained Oak with full EU Ecolabel certification. </p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
+          }
+        },
+        "column_AwmLJY": {
+          "type": "column",
+          "settings": {
+            "title": "Price transparency",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h4",
+            "text": "<p>Fair pricing ensures you know exactly what you’re paying for, with no hidden costs or markups.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
+          }
+        },
+        "column_j3Pdbn": {
+          "type": "column",
+          "settings": {
+            "title": "All eco-certified",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h4",
+            "text": "<p>All products consider a more holistic environmental impact and are designed for a longer lifetime in a way.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
+          }
+        },
+        "column_MikwAx": {
+          "type": "column",
+          "settings": {
+            "title": "Sustainability",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h4",
+            "text": "<p>Committed to sustainable practices, ethical sourcing, and reducing environmental impact.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "column_YWTLnF",
+        "column_AwmLJY",
+        "column_j3Pdbn",
+        "column_MikwAx"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "content_alignment": "left",
+        "show_col_count": false,
+        "show_image": true,
+        "columns_desktop": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 40,
+        "padding_bottom": 60
+      }
+    },
+    "scrolling_gallery_image_wJyLJr": {
+      "type": "scrolling-gallery-image",
+      "blocks": {
+        "gallery_zMzedj": {
+          "type": "gallery",
+          "settings": {
+            "color_scheme": "",
+            "image_link": "",
+            "social_media": "instagram",
+            "heading": "thisisaaccount"
+          }
+        },
+        "gallery_PALf8b": {
+          "type": "gallery",
+          "settings": {
+            "color_scheme": "",
+            "image_link": "",
+            "social_media": "instagram",
+            "heading": "furniturelover"
+          }
+        },
+        "gallery_t8EfbE": {
+          "type": "gallery",
+          "settings": {
+            "color_scheme": "",
+            "image_link": "",
+            "social_media": "instagram",
+            "heading": "thisisaaccount"
+          }
+        },
+        "gallery_HjXBVX": {
+          "type": "gallery",
+          "settings": {
+            "color_scheme": "",
+            "image_link": "",
+            "social_media": "instagram",
+            "heading": "baddyjam"
+          }
+        },
+        "gallery_Hdq7y7": {
+          "type": "gallery",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "image_link": "",
+            "social_media": "instagram",
+            "heading": "liamwealthy"
+          }
+        },
+        "gallery_xaTeHP": {
+          "type": "gallery",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "image_link": "",
+            "social_media": "instagram",
+            "heading": "baddyjam"
+          }
+        },
+        "gallery_gf99Q7": {
+          "type": "gallery",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "image_link": "",
+            "social_media": "instagram",
+            "heading": "liamwealthy"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_zMzedj",
+        "gallery_PALf8b",
+        "gallery_t8EfbE",
+        "gallery_HjXBVX",
+        "gallery_Hdq7y7",
+        "gallery_xaTeHP",
+        "gallery_gf99Q7"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "section_header_alignment": "center",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "We’re on Gram",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "show_button_on_top": false,
+        "button_label": "@garage_store",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "direction": "left",
+        "speed": 0.1,
+        "pause_on_hover": true,
+        "column_gap": "medium",
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "featured_collection_yWxAPa": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_rqmhFM": {
+          "type": "collection",
+          "settings": {
+            "collection": "all",
+            "title": "",
+            "show_banner": false,
+            "color_scheme": "",
+            "card_link": "",
+            "image_overlay_opacity": 0,
+            "content_position": "top-left",
+            "content_alignment": "left",
+            "subheading": "",
+            "subheading_style": "",
+            "heading": "Collections",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "collection_rqmhFM"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-1",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Make it with your own photos",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "<h3>discover the photo service</h3>",
+        "text_size": "text-base",
+        "button_label": "View All",
+        "button_link": "shopify://collections/all",
+        "button_style": "btn--plain",
+        "button_icon": "arrow-right",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "enable_slider": true,
+        "content_overflow": true,
+        "navigation_position": "middle",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_progress_bar": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "featured_collection_tgfpQF": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_qzyhBV": {
+          "type": "collection",
+          "settings": {
+            "collection": "offers",
+            "title": "",
+            "show_banner": false,
+            "color_scheme": "",
+            "card_link": "",
+            "image_overlay_opacity": 0,
+            "content_position": "top-left",
+            "content_alignment": "left",
+            "subheading": "",
+            "subheading_style": "",
+            "heading": "Collections",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "collection_qzyhBV"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-1",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Save for nice extras",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "<h3>only with your Mimiso card</h3>",
+        "text_size": "text-base",
+        "button_label": "View All",
+        "button_link": "shopify://collections/all",
+        "button_style": "btn--plain",
+        "button_icon": "arrow-right",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "enable_slider": true,
+        "content_overflow": true,
+        "navigation_position": "middle",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_progress_bar": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "featured_collection_tK9CBg": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_8LyrUh": {
+          "type": "collection",
+          "settings": {
+            "collection": "all",
+            "title": "",
+            "show_banner": false,
+            "color_scheme": "",
+            "card_link": "",
+            "image_overlay_opacity": 0,
+            "content_position": "top-left",
+            "content_alignment": "left",
+            "subheading": "",
+            "subheading_style": "",
+            "heading": "Collections",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "collection_8LyrUh"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-1",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Even more Mimiso",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--plain",
+        "button_icon": "arrow-right",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "enable_slider": true,
+        "content_overflow": true,
+        "navigation_position": "middle",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_progress_bar": true,
+        "padding_top": 60,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed"
       }
     }
   },
   "order": [
-    "sa_video_section_zmANX6",
-    "sa_reversable_banner_dqnaXm",
-    "sa_reversable_banner_inUbi4",
-    "nxt_talented_section_wzqaaK",
-    "nxt_image_box_section_6bdnaH"
+    "collection_list_slider_6qbNfj",
+    "slideshow_q3U4Jn",
+    "featured_collection_bdaamt",
+    "promotion_banner_VCkmzP",
+    "custom_content_HPgFTK",
+    "collection_list_Azm9te",
+    "collection_tabs_VexkkR",
+    "favorite_products_6Tg9Pn",
+    "lookbook_slider_9zCdQJ",
+    "custom_content_JxRy7x",
+    "buttons_with_icon_7zH9F3",
+    "featured_collection_RWUfH9",
+    "collection_cards_DECVyp",
+    "image_with_text_aXhRxw",
+    "testimonials_mLThk7",
+    "slider_with_multicolumn_aJwbrc",
+    "scrolling_promotion_9Hng8m",
+    "buttons_with_icon_c8CzHV",
+    "multicolumn_Ff4Wbj",
+    "scrolling_gallery_image_wJyLJr",
+    "featured_collection_yWxAPa",
+    "featured_collection_tgfpQF",
+    "featured_collection_tK9CBg"
   ]
 }

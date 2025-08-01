@@ -11,86 +11,258 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "sa_footer_GLHWD4": {
-      "type": "sa-footer",
+    "multicolumn_icon_4JCE64": {
+      "type": "multicolumn-icon",
       "blocks": {
-        "menu_Jdf3FT": {
-          "type": "menu",
+        "column_CcMMjV": {
+          "type": "column",
           "settings": {
-            "title": "Company",
-            "menu": "company"
+            "icon": "chat",
+            "max_width": 28,
+            "max_width_mb": 28,
+            "title": "Customer Service",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "text-base",
+            "heading_font": "heading",
+            "text": "<p>Mon - Fri / 9:00AM - 5:00PM</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
           }
         },
-        "menu_Ph6PEF": {
-          "type": "menu",
+        "column_GWEqwq": {
+          "type": "column",
           "settings": {
-            "title": "Resources",
-            "menu": "resources"
+            "icon": "phone",
+            "max_width": 28,
+            "max_width_mb": 28,
+            "title": "Call Us",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "text-base",
+            "heading_font": "heading",
+            "text": "<p><a href=\"tel:+0800 702 2536\" title=\"tel:+0800 702 2536\">0800 702 2536</a></p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
           }
         },
-        "menu_fBzcJe": {
-          "type": "menu",
+        "column_EQUVzx": {
+          "type": "column",
           "settings": {
-            "title": "Percipio",
-            "menu": "percipio"
+            "icon": "paperplane",
+            "max_width": 28,
+            "max_width_mb": 28,
+            "title": "Get in Touch",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "text-base",
+            "heading_font": "heading",
+            "text": "<p><a href=\"mailto:support@minisoshop.co.uk\" title=\"mailto:support@minisoshop.co.uk\">support@minisoshop.co.uk</a></p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
           }
         },
-        "menu_KQTPET": {
-          "type": "menu",
+        "column_RAHDJ7": {
+          "type": "column",
           "settings": {
-            "title": "Popular Topics",
-            "menu": "popular-topics"
+            "icon": "map-pin",
+            "max_width": 32,
+            "max_width_mb": 32,
+            "title": "Address",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "text-base",
+            "heading_font": "heading",
+            "text": "<p>124 Baker Street, London, W1U 6TY</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "button_icon": "none"
           }
         }
       },
       "block_order": [
-        "menu_Jdf3FT",
-        "menu_Ph6PEF",
-        "menu_fBzcJe",
-        "menu_KQTPET"
+        "column_CcMMjV",
+        "column_GWEqwq",
+        "column_EQUVzx",
+        "column_RAHDJ7"
       ],
-      "name": "SA Footer",
       "settings": {
-        "logo": "shopify://shop_images/LOGO_4.png",
-        "logo_max_width": 200,
-        "logo_max_width_mobile": 150,
-        "show_social_links": true,
-        "facebook_url": "#",
-        "linkedin_url": "#",
-        "youtube_url": "#",
-        "instagram_url": "#",
-        "twitter_url": "#",
+        "container": "fixed",
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "enable_sticky": false,
+        "card_color_scheme": "",
+        "content_alignment": "left",
+        "image_position": "left",
+        "icon_color": "#1d349a",
         "columns_desktop": 4,
-        "columns_tablet": 2,
-        "columns_mobile": 1,
-        "padding_top": 140,
-        "padding_bottom": 140,
-        "background_color": "#f3efda",
-        "accent_color": "#ff319f",
-        "text_color": "#141c36"
+        "column_gap": "large",
+        "row_gap": "inherit",
+        "show_divider_col": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "footer": {
       "type": "footer",
-      "disabled": true,
+      "blocks": {
+        "newsletter_3qCrWc": {
+          "type": "newsletter",
+          "settings": {
+            "block_width": 55,
+            "heading": "Join Our Newsletter",
+            "heading_size": "h3",
+            "newsletter_description": "<p>Sign up to our newsletter & receive 10% off your first order.</p>",
+            "newsletter_term": "<p>By subscribing you agree to the <a href=\"/policies/terms-of-service\" title=\"Terms of Service\">Terms of Services</a>  and  <a href=\"/policies/privacy-policy\" title=\"Privacy Policy\">Privacy Policy.</a></p>",
+            "newsletter_text_alignment": "left",
+            "form_width": 465,
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "order_first": true
+          }
+        },
+        "menu_DEKGYP": {
+          "type": "menu",
+          "settings": {
+            "block_width": 15,
+            "heading": "Popular categories",
+            "heading_size": "h6",
+            "menu": "popular-categories",
+            "open_default": false,
+            "show_divider": false
+          }
+        },
+        "menu_4eCrBB": {
+          "type": "menu",
+          "settings": {
+            "block_width": 15,
+            "heading": "About Mimiso",
+            "heading_size": "h6",
+            "menu": "about-mimiso",
+            "open_default": false,
+            "show_divider": false
+          }
+        },
+        "menu_6cjHfA": {
+          "type": "menu",
+          "settings": {
+            "block_width": 15,
+            "heading": "Company",
+            "heading_size": "h6",
+            "menu": "main-menu",
+            "open_default": false,
+            "show_divider": false
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_3qCrWc",
+        "menu_DEKGYP",
+        "menu_4eCrBB",
+        "menu_6cjHfA"
+      ],
+      "custom_css": [],
       "settings": {
+        "container": "fixed",
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
+        "social_button_style": "btn--icon",
         "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_language_selector": false,
         "payment_enable": true,
-        "show_policy": true,
-        "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "footer_bottom_menu": "main-menu",
+        "show_section_divider": true,
+        "divider_width": "fixed",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "mobile_sticky_bar_aYhgJK": {
+      "type": "mobile-sticky-bar",
+      "blocks": {
+        "home_AP8mmy": {
+          "type": "home",
+          "settings": {
+            "text": "Home"
+          }
+        },
+        "cart_gnnwxQ": {
+          "type": "cart",
+          "settings": {
+            "text": "Cart"
+          }
+        },
+        "products_eYYkE8": {
+          "type": "products",
+          "settings": {
+            "text": "Products",
+            "collection": ""
+          }
+        },
+        "link_mJ6QMc": {
+          "type": "link",
+          "settings": {
+            "text": "About",
+            "url": "",
+            "icon": "map-pin"
+          }
+        }
+      },
+      "block_order": [
+        "home_AP8mmy",
+        "cart_gnnwxQ",
+        "products_eYYkE8",
+        "link_mJ6QMc"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_bar": true,
+        "show_text": true
       }
     }
   },
   "order": [
-    "sa_footer_GLHWD4",
-    "footer"
+    "multicolumn_icon_4JCE64",
+    "footer",
+    "mobile_sticky_bar_aYhgJK"
   ]
 }
