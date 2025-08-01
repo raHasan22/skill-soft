@@ -1,0 +1,368 @@
+{% style %}
+    .rh_skillsoft-about-learnboard-hero-sec {
+  background: {% if section.settings.background_image %}{{ section.settings.background_image | image_url: width: 1920 }}{% else %}none{% endif %};
+  background-color: {% if section.settings.background_image %}{% else %}#3b132a{% endif %};
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;
+}
+
+.rh_skillsoft-about-learnboard-hero-sec .container_rh {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.rh_skillsoft-about-learnboard-hero-sec .container_rh .rh_main_content_rh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 240px;
+  width: 100%;
+}
+
+.rh_skillsoft-about-learnboard-hero-sec
+  .container_rh
+  .rh_main_content_rh
+  .rh_about_text-left {
+  width: 50%;
+}
+
+.rh_skillsoft-about-learnboard-hero-sec
+  .container_rh
+  .rh_main_content_rh
+  .rh_about_text-left
+  .rh_about_title_rh {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f3efda;
+}
+
+.rh_skillsoft-about-learnboard-hero-sec
+  .container_rh
+  .rh_main_content_rh
+  .rh_about_text-left
+  .rh_about_description_rh {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f3efda;
+  margin: 20px 0;
+}
+
+.rh_skillsoft-about-learnboard-hero-sec
+  .container_rh
+  .rh_main_content_rh
+  .rh_about_image-right {
+  width: 50%;
+}
+
+.rh_skillsoft-about-learnboard-hero-sec
+  .container_rh
+  .rh_main_content_rh
+  .rh_about_image-right
+  .rh_about_image_rh {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About Learnboard Hero Section Responsive */
+@media (max-width: 1200px) {
+  .rh_skillsoft-about-learnboard-hero-sec {
+    padding: {{ section.settings.padding_top | times: 0.86 | round }}px 20px {{ section.settings.padding_bottom | times: 0.86 | round }}px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec .container_rh .rh_main_content_rh {
+    gap: 120px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_title_rh {
+    font-size: 32px;
+    line-height: 110%;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_description_rh {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .rh_skillsoft-about-learnboard-hero-sec {
+    padding: {{ section.settings.padding_top | times: 0.71 | round }}px 20px {{ section.settings.padding_bottom | times: 0.71 | round }}px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec .container_rh .rh_main_content_rh {
+    gap: 80px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_title_rh {
+    font-size: 28px;
+    line-height: 110%;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_description_rh {
+    font-size: 15px;
+    line-height: 26px;
+    margin: 15px 0 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rh_skillsoft-about-learnboard-hero-sec {
+    padding: {{ section.settings.padding_top | times: 0.57 | round }}px 16px {{ section.settings.padding_bottom | times: 0.57 | round }}px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec .container_rh .rh_main_content_rh {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_title_rh {
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_description_rh {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin: 15px 0 20px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_image-right {
+    width: 100%;
+    order: 1;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_image-right
+    .rh_about_image_rh {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .rh_skillsoft-about-learnboard-hero-sec {
+    padding: {{ section.settings.padding_top | times: 0.43 | round }}px 12px {{ section.settings.padding_bottom | times: 0.43 | round }}px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec .container_rh .rh_main_content_rh {
+    gap: 25px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_title_rh {
+    font-size: 20px;
+    line-height: 110%;
+    margin-bottom: 12px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_description_rh {
+    font-size: 13px;
+    line-height: 22px;
+    margin: 12px 0 18px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_image-right
+    .rh_about_image_rh {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .rh_skillsoft-about-learnboard-hero-sec {
+    padding: {{ section.settings.padding_top | times: 0.36 | round }}px 10px {{ section.settings.padding_bottom | times: 0.36 | round }}px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec .container_rh .rh_main_content_rh {
+    gap: 20px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_title_rh {
+    font-size: 18px;
+    line-height: 110%;
+    margin-bottom: 10px;
+  }
+
+  .rh_skillsoft-about-learnboard-hero-sec
+    .container_rh
+    .rh_main_content_rh
+    .rh_about_text-left
+    .rh_about_description_rh {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px 0 15px;
+  }
+}
+{% endstyle %}
+<div class="rh_skillsoft-about-learnboard-hero-sec">
+      <div class="container_rh">
+        <div class="rh_main_content_rh">
+          <div class="rh_about_text-left">
+            <div class="rh_about_title_rh">
+              <span>{{ section.settings.title | default: 'LEARN MORE ABOUT OUR BOARD OF DIRECTORS' }}</span>
+            </div>
+            <div class="rh_about_description_rh">
+              <span>{{ section.settings.description | default: 'Get a learning library with unlimited live and interactive classes for your organisation, offering 700+ monthly classes across AI, technology, data, cloud, and other digital skills.' }}</span>
+            </div>
+            {% if section.settings.button_text and section.settings.button_url %}
+              <a href="{{ section.settings.button_url }}" class="primary-button_skillsoft">
+                {{ section.settings.button_text }}
+              </a>
+            {% endif %}
+          </div>
+          <div class="rh_about_image-right">
+            <img
+              src="{% if section.settings.right_image %}{{ section.settings.right_image | image_url: width: 600 }}{% else %}https://dummyimage.com/600x400/3b132a/f3efda&text=About+Learnboard{% endif %}"
+              alt="{{ section.settings.right_image_alt | default: 'About Learnboard' }}"
+              class="rh_about_image_rh"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% schema %}
+{
+  "name": "About Learnboard Hero",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 20,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 20,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 70
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image",
+      "info": "If no image is selected, a solid color background will be used"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Side Image",
+      "info": "If no image is selected, a placeholder image will be used"
+    },
+    {
+      "type": "text",
+      "id": "right_image_alt",
+      "label": "Right Image Alt Text",
+      "default": "About Learnboard"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "LEARN MORE ABOUT OUR BOARD OF DIRECTORS"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Get a learning library with unlimited live and interactive classes for your organisation, offering 700+ monthly classes across AI, technology, data, cloud, and other digital skills."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "VIEW OUR INVESTOR SITE"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Learnboard Hero"
+    }
+  ]
+}
+{% endschema %}
